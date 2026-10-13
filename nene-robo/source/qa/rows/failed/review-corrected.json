@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected",
+  "states": [
+    "failed"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18675,
+          "bbox": [
+            29,
+            5,
+            162,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 338
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17991,
+          "bbox": [
+            32,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 313
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19686,
+          "bbox": [
+            24,
+            5,
+            167,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 341
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20542,
+          "bbox": [
+            22,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 360
+        },
+        {
+          "index": 4,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20100,
+          "bbox": [
+            23,
+            5,
+            169,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 320
+        },
+        {
+          "index": 5,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19643,
+          "bbox": [
+            24,
+            5,
+            167,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 339
+        },
+        {
+          "index": 6,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18947,
+          "bbox": [
+            27,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 277
+        },
+        {
+          "index": 7,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\qa\\rows\\failed\\frames-corrected\\failed\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18442,
+          "bbox": [
+            30,
+            5,
+            161,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 344
+        }
+      ]
+    }
+  ]
+}
