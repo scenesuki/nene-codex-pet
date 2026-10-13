@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "pet_id": "nene-initial-uniform",
+  "sprite_version": 2,
+  "sprite_size": [
+    1536,
+    2288
+  ],
+  "sprite_format": "WEBP",
+  "zip_entries": [
+    "nene-initial-uniform/pet.json",
+    "nene-initial-uniform/spritesheet.webp"
+  ],
+  "zip_bytes": 2445555,
+  "spritesheet_sha256": "ec9c83870d127f707a5223d12067c0ae062fc7ece63b782ac9e0c7e4883d2b46",
+  "zip_sha256": "527520b0cb8229d11e4e3a569d4ad504f699807af763b8414f4b898c9674bd90",
+  "gif_frame_counts": {
+    "idle": 6,
+    "running-right": 8,
+    "running-left": 8,
+    "waving": 4,
+    "jumping": 5,
+    "failed": 8,
+    "waiting": 6,
+    "running": 6,
+    "review": 6,
+    "look-directions": 16
+  },
+  "visual_warnings": [
+    "202.5 and 225 have subtly differentiated yaw; both remain coherent down-left.",
+    "337.5->000 has a more noticeable head-yaw change than nearby transitions; visual review found a coherent return to frontal up, stable lower-body registration and no conspicuous snap or identity change."
+  ],
+  "application_import_verified": false
+}

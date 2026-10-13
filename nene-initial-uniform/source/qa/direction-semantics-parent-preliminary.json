@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "reviewed_by": "parent; pending independent final review",
+  "directions": [
+    {
+      "degree": "000",
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "up",
+      "horizontal_evidence": "Face/nose/eyes frontal relative to head center; anchored torso and feet.",
+      "vertical_evidence": "raised chin and upper irises",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "022.5",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "horizontal_evidence": "Face/nose/eyes slight right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "raised eyes",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "045",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "raised chin and eyes",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "067.5",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "slight upward pitch",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "090",
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "near level",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "112.5",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "slightly lowered chin",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "135",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "lowered chin and eyelids",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "157.5",
+      "verdict": "warning",
+      "expected": "down-right",
+      "observed": "down-right",
+      "horizontal_evidence": "Face/nose/eyes right relative to head center; anchored torso and feet.",
+      "vertical_evidence": "lowered chin and eyes",
+      "reason": "Correct down-right axes; review transition into frontal down."
+    },
+    {
+      "degree": "180",
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "down",
+      "horizontal_evidence": "Face/nose/eyes frontal relative to head center; anchored torso and feet.",
+      "vertical_evidence": "bowed head and low eyelids",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "202.5",
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "down-left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "bowed head and low eyes",
+      "reason": "Correct down-left axes; adjacent yaw difference is small."
+    },
+    {
+      "degree": "225",
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "down-left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "low chin and eyes",
+      "reason": "Correct down-left axes; adjacent yaw difference is small."
+    },
+    {
+      "degree": "247.5",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "slightly lowered chin",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "270",
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "near level",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "292.5",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "lifted chin and eyes",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "315",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "horizontal_evidence": "Face/nose/eyes left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "raised chin and eyes",
+      "reason": "Visible head, face and eyes support the intended direction; no wrong quadrant or whole-body rotation."
+    },
+    {
+      "degree": "337.5",
+      "verdict": "warning",
+      "expected": "up-left",
+      "observed": "up-left",
+      "horizontal_evidence": "Face/nose/eyes slight left relative to head center; anchored torso and feet.",
+      "vertical_evidence": "lifted chin and eyes",
+      "reason": "Correct up-left axes; continuity metric flags transition into up for visual review."
+    }
+  ]
+}
+

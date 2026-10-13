@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "installed_directory": "C:\\Users\\tieha\\.codex\\pets\\nene-initial-uniform",
+  "installed_files": [
+    "pet.json",
+    "spritesheet.webp"
+  ],
+  "id": "custom:nene-initial-uniform",
+  "display_name": "草薙宁宁 · 初始校服",
+  "sprite_version": 2,
+  "decoded_dimensions": {
+    "width": 1536,
+    "height": 2288
+  },
+  "format": "webp",
+  "spritesheet_sha256": "ec9c83870d127f707a5223d12067c0ae062fc7ece63b782ac9e0c7e4883d2b46",
+  "app_validator_source": "C:/Program Files/WindowsApps/OpenAI.Codex_26.1007.2314.0_x64__2p2nqsd0c76g0/app/resources/app.asar::.vite/build/src-BJv5Mk7n.js",
+  "app_validator_module_sha256": "72e2b366d574206f76fc079c79b64c31ce378970a797475ded8709908d338f08",
+  "method": "read-only replay of installed image/version and safe-path validators; manifest and file hashes checked",
+  "application_ui_detection_verified": false,
+  "floating_display_verified": false,
+  "current_pet_changed": false
+}
