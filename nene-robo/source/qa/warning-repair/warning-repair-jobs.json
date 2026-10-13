@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "pet_id": "nene-robo",
+  "target_version": "1.0.1",
+  "generation_method": "built-in imagegen whole-row repair",
+  "updated_at": "2026-10-13T09:29:27.702148+00:00",
+  "jobs": [
+    {
+      "id": "look-row-9-warning-repair-r1",
+      "status": "complete-rejected",
+      "prompt_file": "source/prompts/rows/look-row-9-warning-repair-r1.md",
+      "input_images": [
+        "source/decoded/look-row-9.png",
+        "source/references/canonical-base.png",
+        "source/references/look-row-9-grounding.png"
+      ],
+      "output_path": "source/decoded/look-row-9-warning-repair-r1.png",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a13478-6219-7330-8fb2-87d19ec7b9cc/exec-38cc9450-71da-4df8-9928-b32083f2b4bd.png"
+    },
+    {
+      "id": "look-row-9-warning-repair-r2",
+      "status": "complete-approved",
+      "prompt_file": "source/prompts/rows/look-row-9-warning-repair-r2.md",
+      "input_images": [
+        "source/references/canonical-base.png",
+        "source/decoded/look-anchors-approved.png",
+        "source/references/layout-guides/look-row-9-spaced.png",
+        "source/decoded/look-row-9.png"
+      ],
+      "output_path": "source/decoded/look-row-9-warning-repair-r2.png",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a13497-be97-7e63-95bf-5096aee09676/exec-77a62693-db5e-4847-9197-098ed2b25ddb.png",
+      "sha256": "bc81e65f8af4564a5720401a73d5803d86716ecb1d5f1550511feec63dd15792",
+      "registered_scale": 0.5210526315789473,
+      "canvas": [
+        2171,
+        724
+      ],
+      "deterministic_edge_gate": "pass",
+      "note": "Original-resolution components normalized once with shared scale; 1px canvas difference does not affect component-based assembly."
+    },
+    {
+      "id": "look-row-10-warning-repair-r2",
+      "status": "complete-rejected",
+      "prompt_file": "source/prompts/rows/look-row-10-warning-repair-r2.md",
+      "input_images": [
+        "source/decoded/look-row-9-warning-repair-r2.png",
+        "source/references/canonical-base.png",
+        "source/decoded/look-anchors-approved.png",
+        "source/references/layout-guides/look-row-10-spaced.png"
+      ],
+      "output_path": "source/decoded/look-row-10-warning-repair-r2.png",
+      "depends_on": [
+        "look-row-9-warning-repair-r2"
+      ],
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a1349b-5e8b-7193-88e3-a7413b8d46cc/exec-0db1a8df-001d-4bee-a74d-a55fe25f9e54.png",
+      "sha256": "d6cbdac38d298d9c2ac2d26d09590b837600da7dc7d604f6a771add6fb18518e",
+      "rejection": "Generation worker observed poses4-6 still facing screen-right; final pose lacks slight-left cue. Not assembled or promoted."
+    },
+    {
+      "id": "look-row-10-warning-repair-r3",
+      "status": "complete-rejected-scale",
+      "prompt_file": "source/prompts/rows/look-row-10-warning-repair-r3.md",
+      "input_images": [
+        "source/decoded/look-row-10.png",
+        "source/references/canonical-base.png",
+        "source/decoded/look-row-9-warning-repair-r2.png",
+        "source/references/layout-guides/look-row-10-spaced.png",
+        "source/decoded/look-anchors-approved.png"
+      ],
+      "output_path": "source/decoded/look-row-10-warning-repair-r3.png",
+      "depends_on": [
+        "look-row-9-warning-repair-r2"
+      ],
+      "strategy": "New synthesis from original LEFT orientations, new right-half only for scale and continuity; avoids fidelity to wrong right-facing heads.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a1349e-fe92-7672-b364-6ad3c7a8b684/exec-d3598805-389c-4707-8cf3-4766ffcfde42.png",
+      "sha256": "05bc3d3b093edb36de71f6cdaa5147ef62e3281fd19a67338592067091390b5f",
+      "source_heights": [
+        324,
+        330,
+        335,
+        336,
+        338,
+        342,
+        346,
+        345
+      ],
+      "right_half_source_heights": [
+        380,
+        380,
+        379,
+        377,
+        377,
+        365,
+        363,
+        362
+      ],
+      "rejection": "LEFT pose order correct in generator QA, but source-scale family too small for persisted0.5210526 row9 scale; would shrink at row boundary. Not promoted."
+    },
+    {
+      "id": "look-row-10-warning-repair-r4",
+      "status": "complete-rejected-separation",
+      "prompt_file": "source/prompts/rows/look-row-10-warning-repair-r4.md",
+      "input_images": [
+        "source/decoded/look-row-10-warning-repair-r3.png",
+        "source/decoded/look-row-9-warning-repair-r2.png",
+        "source/references/canonical-base.png",
+        "source/references/layout-guides/look-row-10-spaced.png"
+      ],
+      "output_path": "source/decoded/look-row-10-warning-repair-r4.png",
+      "depends_on": [
+        "look-row-9-warning-repair-r2"
+      ],
+      "strategy": "Geometry-only AI edit of already LEFT-correct source: enlarge entire figures10percent at fixed foot anchors; retain head semantics.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134a2-d8f7-7ae1-bfdd-7ecca92e7109/exec-505355f3-ca09-40ed-80b3-9a6c34ae6b97.png",
+      "sha256": "c1bcc05dfaf9e3d84c54e8845455b4a826c584ea79388ab5957af063740bccc6",
+      "rejection": "Native extraction found7foreground components; firsttwohairtips share a connection. Whole-row layout repair needed, no cropped/hacked cells accepted."
+    },
+    {
+      "id": "look-row-10-warning-repair-r5",
+      "status": "complete-candidate-not-promoted",
+      "prompt_file": "source/prompts/rows/look-row-10-warning-repair-r5.md",
+      "input_images": [
+        "source/decoded/look-row-10-warning-repair-r4.png",
+        "source/decoded/look-row-9-warning-repair-r2.png",
+        "source/references/canonical-base.png",
+        "source/references/layout-guides/look-row-10-spaced.png"
+      ],
+      "output_path": "source/decoded/look-row-10-warning-repair-r5.png",
+      "depends_on": [
+        "look-row-9-warning-repair-r2"
+      ],
+      "strategy": "Layout-only AI edit separates firstfigure via40px source-y stagger; native registration alignsfeet without affecting final poses.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134a9-8dce-7802-8163-f116643638ca/exec-09abc6d6-dc37-42ee-ab5d-90364bcb2fcc.png",
+      "sha256": "f8f66c12f1baeafeacce30ecc64478541e06359b9414b52a4073b5ca72d3c121",
+      "deterministic_edge_gate": "pass",
+      "normalization": "row9 persisted sharedscale0.5210526315789473 and neutral body/feet anchors, source y stagger removed",
+      "final_review": "r2 assembled candidate improved seam but independent final reviewer recommends stronger diagonal gaze before promotion."
+    },
+    {
+      "id": "look-row-9-warning-repair-r3",
+      "status": "complete-rejected",
+      "prompt_file": "source/prompts/rows/look-row-9-warning-repair-r3.md",
+      "input_images": [
+        "source/decoded/look-row-9-warning-repair-r2.png",
+        "source/references/look-row-9-face-grounding-r3.png",
+        "source/references/canonical-base.png",
+        "source/references/layout-guides/look-row-9-spaced.png"
+      ],
+      "output_path": "source/decoded/look-row-9-warning-repair-r3.png",
+      "strategy": "Mechanics change: visible open-eye aiming and stronger opposing headpitch; close-up eye construction reference prevents forward-stare copying.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134c7-a2ce-7983-a997-9b28f49355fe/exec-735c3290-8bee-47ff-acaa-2b1fc42bd024.png",
+      "sha256": "b8ea04062e69edc008a6499a5d9b2c05291548ee4ceb91f9412a2f83a644f671",
+      "rejection": "Open-eye edit still leaves pose4upcue andpose8rightcue too weak in generator QA. No promotion; repeated rootcondition requires stronger cardinal mechanics."
+    },
+    {
+      "id": "look-cardinals-warning-repair-r2",
+      "status": "complete-approved",
+      "prompt_file": "source/prompts/rows/look-cardinals-warning-repair-r2.md",
+      "input_images": [
+        "source/references/canonical-base.png",
+        "source/references/official-figure-box-art.jpg",
+        "source/references/layout-guides/look-cardinals.png"
+      ],
+      "output_path": "source/decoded/look-cardinals-warning-repair-r2.png",
+      "strategy": "Change mechanics at cardinal-family stage: stronger rigidhead pitch35/yaw65, openeyes, fixedlowerbody. New rows derive from these strongeranchors.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134cd-c21b-7832-88fd-4f368751faed/exec-61e1c40f-dc00-45fc-8aeb-7e1cf01cf3f4.png",
+      "sha256": "1bfdd84188a6fb913496870bfe0b055d2b82de9884f838bddc7efafb79a805f1",
+      "approved_anchor_strip": "source/decoded/look-anchors-warning-repair-r2-component.png",
+      "deterministic_extraction": "Provided component grouping restores complete disjointposes crossing nominalsource slots, every actualsourcebound has>=2pxmargin andfinaledgecount0",
+      "semantic_review": "independent all4principalaxes pass"
+    },
+    {
+      "id": "look-row-9-warning-repair-r4",
+      "status": "complete-approved",
+      "prompt_file": "source/prompts/rows/look-row-9-warning-repair-r4.md",
+      "input_images": [
+        "source/references/canonical-base.png",
+        "source/decoded/look-anchors-warning-repair-r2-component.png",
+        "source/references/layout-guides/look-compact-r4.png",
+        "source/references/look-lower-body-scale-r4.png"
+      ],
+      "output_path": "source/decoded/look-row-9-warning-repair-r4.png",
+      "depends_on": [
+        "look-cardinals-warning-repair-r2"
+      ],
+      "strategy": "New coherent synthesis from strengthenedcardinalfamily andhead-freebodyreference; compactsourcebox prevents haircontact.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134d5-7515-7b02-8a06-84d49d4bd761/exec-b675ae7e-203c-43b7-a0df-1fb5614ac6b3.png",
+      "sha256": "553fdd46f203ba4120bfb7fc7170d08f94df6a1daff07880b566f99cc886c6cb",
+      "source_layout_deviation": "Guide295pxnotfollowed; actualmax395. Original8disjointposegroups recovered, nativefinaledge/sharedbodyregistrationpass; sourcecanvas2170x725doesnotaffectfixedfinalatlas.",
+      "registered_scale": 0.5012658227848101,
+      "semantic_review": "Independent first8axespass exceptsubtle022.5/045adjacentwarning; critical067.5/112.5vertical and157.5horizontal improved."
+    },
+    {
+      "id": "look-row-10-warning-repair-r7",
+      "status": "complete-assembled-awaiting-final-qa",
+      "prompt_file": "source/prompts/rows/look-row-10-warning-repair-r7.md",
+      "input_images": [
+        "source/decoded/look-row-10-warning-repair-r5.png",
+        "source/decoded/look-row-9-warning-repair-r4.png",
+        "source/decoded/look-anchors-warning-repair-r2-component.png",
+        "source/references/canonical-base.png",
+        "source/references/layout-guides/look-row-10-spaced.png"
+      ],
+      "output_path": "source/decoded/look-row-10-warning-repair-r7.png",
+      "depends_on": [
+        "look-row-9-warning-repair-r4"
+      ],
+      "strategy": "Leftfamilyhead/eyeedit fromnewstrongcardinals; originalbodygeometry retained, closingUP-leftreturnsnearfrontal.",
+      "selected_source": "C:/Users/tieha/.codex/generated_images/01a134e1-17fe-7323-85cf-1ab804acf107/exec-296031b3-ac28-4ea7-9ff4-95f6fb6bc3fa.png",
+      "sha256": "698b87646d1649fff2b9d1a90eccb7609f79a2fefc00a73f0a71e5120648ff0f",
+      "registered_scale": 0.5012658227848101
+    }
+  ],
+  "notes": "r1 uses the existing full strip itself as exact layout/edit target. It was retained but rejected for no visible semantic improvement. r2 changes strategy to newly synthesize heads and active eye attention."
+}

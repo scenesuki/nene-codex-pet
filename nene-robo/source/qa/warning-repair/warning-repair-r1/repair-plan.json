@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-10-13T08:56:39.122258+00:00",
+  "pet_id": "nene-robo",
+  "baseline_version": "1.0.0",
+  "repair_version": "1.0.1",
+  "baseline_sha256": {
+    "spritesheet.webp": "257ffd5cce157acf911c87d93385ce6325505be5a8c3c68f1b48b1a00ece54bb",
+    "pet.json": "d1ab92cce81c27033cc96e963adf5fad0a500a39aafd8277ffcccce65ecf05b3",
+    "validation.json": "c2de8e4d1531b793f205fd45da5f3c0b7d8445d6afa7b0a28d326d3a18787afc",
+    "preview/look-directions.gif": "c7b246e009d4755357e57ed37cf0e97e01b5e1787bed9fdd09519300216f72a2",
+    "source/qa/direction-semantics.json": "c10e2a51bb4ce7481a04bca048fc5ff55b87ecdc72faf96628cde997da3952d4",
+    "source/qa/look-continuity.json": "58b771a601631cf6d1fa2bde4ef0a8d2ea37e56628ac33771cf80072a336a27c",
+    "source/qa/direction-blind-validation.json": "a6500b64eaa53df351507ae8fe657c7093ca398efdb99d41a9fdbafe71333caf"
+  },
+  "standard_rows_expected_unchanged": true,
+  "targeted_directions": [
+    "045",
+    "067.5",
+    "112.5",
+    "157.5",
+    "202.5",
+    "315",
+    "337.5"
+  ],
+  "promoted": false
+}

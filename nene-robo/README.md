@@ -46,7 +46,7 @@
 
 - 安装文件：本目录的 `pet.json`、`spritesheet.webp`。
 - 下载：[项目 v1.1.0 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.1.0) 的 `nene-robo-v1.0.0.zip`，内含 `nene-robo/`，附完整GIF预览和说明。SHA-256见同次发布的 `SHA256SUMS.txt`。项目发布版本为1.1.0，本套机器人素材版本为1.0.0。
-- 本地发布副本：`../release-assets/v1.1.0/nene-robo-v1.0.0.zip`。原本地交付包继续保留在 `../release-assets/nene-robo-v1.0.0/`；发布副本更新了下载说明，图集和动画未改动。
+- 本地发布副本：`../release-assets/v1.1.0/nene-robo-v1.0.0.zip`。原本地交付包归档到 `../release-assets/v1.1.0/previous-packages/nene-robo-v1.0.0/`；发布副本更新了下载说明，图集和动画未改动。
 - 预览：`preview/animation-overview.gif`、9个状态GIF、`preview/look-directions.gif`、两张静态检查表。
 - 提示词与来源：`source/imagegen-jobs.json` 指向 `source/prompts/` 的正式及修复提示词。全部图像经内置imagegen生成或整行编辑，原图与候选均保留于 `source/decoded/`。
 
@@ -55,3 +55,9 @@
 接受的细微警告：157.5°/202.5°的水平轴、067.5°/112.5°的垂直轴在孤立盲测中较模糊；45°/315°与相邻方向差别较细。337.5°回到0°时头部回正幅度稍大，完整循环复核确认身体、脚、服装锚点与尺度稳定，无显著跳变。裙侧球饰和短杆的负空间为原有造型空隙，未见裙装裂缝。详见 `source/qa/direction-semantics.json`、`blind-review-resolution.json` 与 `final-visual-qa.json`。
 
 还对交付文件重放了本机安装包的实际图片/版本及路径验证函数，v2接受、v1拒绝，见 `preview/app-loader-validation.json`。从仓库根目录运行 `node nene-robo/source/qa/verify-package-loader.mjs` 可复核（需要相同Windows应用版本及路径）。这是工作区文件的加载算法检查。本套尚未安装到用户宠物目录，应用界面识别、选用和浮动显示未验证。
+
+## 迭代归档与全量发布
+
+2026-10-13 用户结束细微警告修复，未采用的 r1–r7 素材、r2/r4 合成候选及检查记录按类别归档到 `source/*/warning-repair/`。状态与位置见 [修复归档索引](source/qa/warning-repair/README.md)，全部制作资料见 [source/README.md](source/README.md)。本目录顶层安装文件和 `preview/` 继续使用已交付的机器人素材 1.0.0。
+
+后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地副本位于 `../release-assets/v1.1.1/`。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。旧的单套打包脚本保存在 `source/previous-distribution/1.0.0/package_pet.py`，仅作历史记录。

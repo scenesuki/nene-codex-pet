@@ -1,0 +1,63 @@
+{
+  "ok": false,
+  "strip": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\decoded\\look-cardinals-warning-repair-r2.png",
+  "directions": [
+    "000",
+    "090",
+    "180",
+    "270"
+  ],
+  "errors": [
+    "000 has 27 non-transparent pixels near its source slot edge"
+  ],
+  "anchors": [
+    {
+      "direction": "000",
+      "source_box": [
+        0,
+        0,
+        542,
+        725
+      ],
+      "used_pixels": 209377,
+      "edge_pixels": 27,
+      "output": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\decoded\\look-anchors-warning-repair-r2\\000.png"
+    },
+    {
+      "direction": "090",
+      "source_box": [
+        542,
+        0,
+        1085,
+        725
+      ],
+      "used_pixels": 190079,
+      "edge_pixels": 20,
+      "output": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\decoded\\look-anchors-warning-repair-r2\\090.png"
+    },
+    {
+      "direction": "180",
+      "source_box": [
+        1085,
+        0,
+        1628,
+        725
+      ],
+      "used_pixels": 203285,
+      "edge_pixels": 0,
+      "output": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\decoded\\look-anchors-warning-repair-r2\\180.png"
+    },
+    {
+      "direction": "270",
+      "source_box": [
+        1628,
+        0,
+        2170,
+        725
+      ],
+      "used_pixels": 190972,
+      "edge_pixels": 0,
+      "output": "D:\\\u9879\u76ee\\pet_2\\nene-robo\\source\\decoded\\look-anchors-warning-repair-r2\\270.png"
+    }
+  ]
+}

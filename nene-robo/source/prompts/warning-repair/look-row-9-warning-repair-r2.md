@@ -1,0 +1,16 @@
+Draw ONE NEW coherent eight-pose gaze strip of the referenced original Robo-Nene in game-like cel-shaded illustration. Image1 is canonical character identity. Image2 contains approved cardinal pose families UP/RIGHT/DOWN/LEFT. Image3 is an invisible wide eight-slot layout guide. Image4 is a source scale and lower-body registration reference, NOT heads to copy: replace its gaze arc with newly drawn, visibly differentiated heads AND eyes. Output2172x724 on pure flat#FF00FF, exactly eight separate small full-body robots in one horizontal line, each roughly333pixels tall with the same body size, bottom baseline and generous gaps as image4. No labels/grid/arrows or guide marks.
+
+Left to right screen directions: UP; UP slightly RIGHT; UP-RIGHT; RIGHT slightly UP; RIGHT; RIGHT slightly DOWN; DOWN-RIGHT; DOWN slightly RIGHT. This is clockwise first-half arc000,22.5,45,67.5,90,112.5,135,157.5. Positive horizontal always means image-right, not character-right. Preserve hands, skirt, skirt balls and rods, short legs, shoes, body scale and fixed foot baseline throughout. Heads pivot as rigid original robot head shells without stretching faces or changing features.
+
+The PRIOR strip had eyes staring almost forward despite head turns. CORRECT THIS: original purple robot eye graphics must actively aim in the requested direction INSIDE their existing eye apertures. Retain printed purple eyes, highlights, face seams and normal original eye shape; no extra eye-white layer, googly eyes, detached dots or second eyes. Change eyes, eyelids and rigid head perspective together. Make gaze cues clear after reduction to192x208.
+
+Pose1: frontal UP, both eye graphics conspicuously high, chin raised.
+Pose2: almost frontal (small right turn), eye attention HIGH and slightly RIGHT.
+Pose3: clear right three-quarter face (stronger turn than2), eye attention at UPPER-RIGHT of original eyes. Must look visibly more right than2.
+Pose4: stronger right turn, same near-profile family as6 but chin RAISED and eye attention at the UPPER-RIGHT, clearly ABOVE the horizon.
+Pose5: unmistakable right profile/three-quarter, attention directly RIGHT and level.
+Pose6: same near-profile family as4 but chin LOWERED, more top of head visible, eye attention at the LOWER-RIGHT, clearly BELOW the horizon. Do not merely reuse4's face expression.
+Pose7: right three-quarter facing DOWN-RIGHT, eye attention LOW and RIGHT.
+Pose8: return toward almost-frontal while looking DOWN, chin lowered; BOTH eyes visibly aim toward their LOWER-RIGHT corners and the face panel retains modest RIGHTward perspective. The horizontal cue must survive the strong downward pitch; do not center eyes.
+
+Use approximately head yaw0,18,35,48,55,48,35,18degrees right and pitch+22,+20,+16,+12,0,-12,-16,-20degrees, as a smooth anatomy guide. Never write these numbers. Same broad gray-green mechanical hair, green headband, true mounted butterfly, pink low bunch ties, green vest, pink bow, yellow skirt and teal shoes. Butterfly remains mounted on the same actual character side; all head accessories follow perspective. No whole-sprite rotation, mirroring, floating props, effects, shadows or enlarged head ornaments. Keep all heads within the same source silhouette height as image4.

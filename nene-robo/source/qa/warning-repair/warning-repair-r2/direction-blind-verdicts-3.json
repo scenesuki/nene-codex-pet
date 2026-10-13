@@ -1,0 +1,90 @@
+{
+  "reviewer": "independent robo_warn_blind3",
+  "protocol_correction": "Reclassified vertical rows4/7 using only up/down/ambiguous, no answer key or other verdicts provided",
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Pupil positions and face planes indicate classified screen sides"
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "Low pupils/lids versus raised pupils"
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "Low pupils/lids versus raised pupils"
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "Low pupils/lids versus raised pupils"
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Sideward face angle dominates; vertical displacement too subtle"
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "Low pupils/lids versus raised pupils"
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "Low pupils/lids versus raised pupils"
+    },
+    {
+      "pair": "vertical-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Sideward face angle dominates; vertical displacement too subtle"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "version": "1.0.0",
+  "files": {
+    "pet.json": "d1ab92cce81c27033cc96e963adf5fad0a500a39aafd8277ffcccce65ecf05b3",
+    "spritesheet.webp": "257ffd5cce157acf911c87d93385ce6325505be5a8c3c68f1b48b1a00ece54bb",
+    "README.md": "f8eab7a7eff4274ad5c733ea551c0eba252ea74a9b9776bf373935c4732b7fa9",
+    "NOTICE.md": "18f606881a6eabf78bfac73cb8bf4688a81298755b578719789d06bd2fa21a5c",
+    "validation.json": "c2de8e4d1531b793f205fd45da5f3c0b7d8445d6afa7b0a28d326d3a18787afc",
+    "preview/animation-overview.gif": "abe161a2c29e730dc6a1e82008aea805b5599d0195035ef9c82aadbdc5e3673d",
+    "preview/app-loader-validation.json": "e6e012b303b8e3cdfc81ea4b0d8241d42780bb4e83ea8d8e536457c93d2758a8",
+    "preview/contact-sheet.png": "fa54eb8398d888d7b3db6b03596a696fbfbe2270d4bd83d227c691c3c28031b1",
+    "preview/failed.gif": "80a5d39fc7b57dd43120a3ea1baa76a5425485cf5c83d29bef21759ec1b39019",
+    "preview/idle.gif": "ba26b90781559101cb6256cf357fc2da9bf02dad861b3a54464f9eb160ce070e",
+    "preview/jumping.gif": "4e6d8e0b34b03cc7f4c9636d0fb40c829d1037f7349c5dea6e3ba5c43794f7a4",
+    "preview/look-directions.gif": "c7b246e009d4755357e57ed37cf0e97e01b5e1787bed9fdd09519300216f72a2",
+    "preview/look-directions.png": "357428b5a2e680b5569b2683098d714ab4c14b4e6fbcfc51de952258b327318f",
+    "preview/preview-files-check.json": "388d440a12a9b9de10a17521e124a9c13651553b171fceca38cdc385169421a8",
+    "preview/README.md": "dad8aca28fb9a1918085455c6f6847688e6f02e4653273b034ef728b2546c052",
+    "preview/review.gif": "8ffab746603580609a3f2c8b06731d8e68be822ffcf37a530143e552303e0256",
+    "preview/running-left.gif": "2e47ed6c0ab0a1f1098a292a06df1c98901a6cf64fb01b12bec99266ba1f3a62",
+    "preview/running-right.gif": "9490b305c7abde1745a5c3126a0ae53842af6c0bde6cb25dd49ba0384e0678af",
+    "preview/running.gif": "f41c970c535cd9d7a50dbd7780081aeac7bfdfa85f61486d128bfa35e6471977",
+    "preview/waiting.gif": "761a41e8eed1177839e473359063da8215937ab1a0be3909bb62bc2b51943d78",
+    "preview/waving.gif": "ade6e185e48580e73c28fe6e0fd9eb55247e6dba915ee50ff43af5856a692cd9"
+  },
+  "original_delivery_unchanged": true
+}

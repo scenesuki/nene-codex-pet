@@ -15,6 +15,8 @@
 
 在 [Releases](https://github.com/scenesuki/nene-codex-pet/releases) 下载所需造型：初始校服包为 `nene-codex-pet-v1.0.0.zip`（v1.0.0），机器人包为 `nene-robo-v1.0.0.zip`（项目 v1.1.0）。解压分别得到 `nene-initial-uniform/` 或 `nene-robo/`。
 
+从 [v1.1.1 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.1.1) 起，每次 Release 提供 `nene-codex-pet-<tag>.zip` 全量合集，包含所有宠物的安装文件、说明、校验记录和完整预览。`nene-codex-pet-v1.1.1.zip` 同时包含校服与机器人；已有历史版本继续保留。
+
 1. 将该目录复制到 `~/.codex/pets/`；Windows 默认路径为 `%USERPROFILE%\.codex\pets\`。若设置了 `CODEX_HOME`，使用其下的 `pets/`。
 2. 确保 `pets/<pet-id>/pet.json` 与 `spritesheet.webp` 同时存在，宠物 ID 使用上面的文件夹名称。
 3. 打开 Codex 的设置 > Pets，刷新列表并选择对应造型；如未显示，重新启动应用。
@@ -32,5 +34,18 @@
 每套宠物在根目录独立存放；最终导入文件位于宠物目录顶层，`preview/` 保存预览，`source/` 保存参考、提示词、原始生成结果、候选和检查记录。`scripts/` 保存共用辅助脚本；`release-assets/<tag>/` 保存本地发布附件，不提交 Git。完整约定见 [AGENTS.md](AGENTS.md)。
 
 制作资料和旧包均保留。辅助验证脚本中涉及本机应用安装包的检查需要相应 Windows 版本及路径；预览和打包脚本使用 Python 与 Pillow。
+
+## 全量打包
+
+从项目根目录运行以下命令，版本号使用尚未存在的新标签：
+
+```powershell
+python scripts/build_release.py --tag v1.1.1
+python scripts/verify_release.py release-assets/v1.1.1/nene-codex-pet-v1.1.1.zip
+```
+
+脚本自动读取根目录所有 `*/pet.json`，验证每套成品和全部 GIF 后打包；缺少资源时停止，已有版本目录不会被覆盖。每次发布上传该合集 ZIP 和同目录的 `SHA256SUMS.txt`，下载后复核哈希。制作源素材与未采用候选保留在仓库，按目录顶层成品发布。
+
+本地发布目录索引见 `release-assets/README.md`；机器人制作与候选归档索引见 [source/README.md](nene-robo/source/README.md)。完整流程见 [AGENTS.md](AGENTS.md)。
 
 本项目为非官方同人作品，权利说明见 [NOTICE.md](NOTICE.md)。

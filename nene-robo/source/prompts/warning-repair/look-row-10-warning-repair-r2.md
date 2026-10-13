@@ -1,0 +1,14 @@
+EDIT IMAGE1, the NEWLY APPROVED first-half gaze strip, into ONE coherent SECOND-half eight-pose gaze strip of the same Robo-Nene. Preserve EXACT canvas2171x724, source figure height, lower-body size, all8 figure placements, body/clothes, hands, skirt-ball connectors, feet and baseline, flat#FF00FF background and generous empty gaps. Keep each new head inside its original occupied height; no taller ornaments, zoom or rescaling. Redraw ALL eight heads and eyes as one coordinated clockwise continuation. Image2 locks canonical identity, image3 approved cardinal families UP/RIGHT/DOWN/LEFT, image4 is invisible slot layout reference.
+
+LEFT TO RIGHT screen directions: DOWN; DOWN slightly LEFT; DOWN-LEFT; LEFT slightly DOWN; LEFT; LEFT slightly UP; UP-LEFT; UP slightly LEFT (180,202.5,225,247.5,270,292.5,315,337.5). Draw newly aimed original purple eye graphics INSIDE original eye apertures, with matching eyelids and rigid head perspective. Eyes must actively attend to the requested side; don't retain a forward stare. No extra eye-white patches, dots, floating pupils, second eyes or altered robot eye construction.
+
+Pose1: frontal DOWN, both eye graphics conspicuously low, chin lowered and upper hair/head visible.
+Pose2: almost-frontal small LEFT turn but BOTH eyes clearly aim toward LOWER-LEFT corners, and face panel has discernible leftward perspective. Keep strong down pitch with a readable left component.
+Pose3: clear LEFT three-quarter, attention LOWER-LEFT, distinct stronger left turn than2.
+Pose4: near-left-profile, chin LOWERED, upper head visible, purple eye attention LOWER-LEFT, clearly BELOW horizon.
+Pose5: unmistakable LEFT profile/three-quarter, eyes directly LEFT and level.
+Pose6: similar near-profile family as4 but chin RAISED, purple eye attention UPPER-LEFT, clearly ABOVE horizon.
+Pose7: LEFT three-quarter with upward pitch, eye attention UPPER-LEFT. Intermediate halfway to frontal8.
+Pose8: RETURN TO ALMOST FRONTAL, small LEFT turn only, eye attention conspicuously HIGH and slightly LEFT. Make it close to image1's first UP pose, with the same centered head balance and dimensions; the last-to-first step must be small. Do not leave8 in the same three-quarter orientation as7. Preserve a clearly readable slight LEFT cue despite near-frontal head.
+
+Smooth head yaw about0,-18,-35,-48,-55,-48,-35,-18degrees and pitch-22,-20,-16,-12,0,+12,+16,+20degrees; numbers guide anatomy only, don't draw them. Short neck is fixed, body stays centered, head accessories follow physical perspective. Never mirror whole figures or deform faces. Gray-green mechanical hair, headband, mounted butterfly at original character side, pink low-tie bunches, green vest, pink bow, yellow skirt, teal shoes and facial panel seams remain original. First pose is one small step after image1 last DOWN-RIGHT. Final pose is one small step before image1 first UP. No text, arrows, labels, grids, scenery, shadow, glow or detached effects.
