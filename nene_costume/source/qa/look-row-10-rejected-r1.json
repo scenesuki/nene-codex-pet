@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "source": "C:\\Users\\tieha\\.codex\\generated_images\\01a13872-d80d-7600-a855-55c8b99d9fd2\\exec-795d2a37-0f7f-436a-ac3b-5bd331b71877.png",
+  "sha256": "7ba2f8d2bc2e37b3d0c1923af08e5c0a7ff3596bc5fde2a3b27cff19b8c34d9f",
+  "packaging_eligible": false,
+  "reason": "Independent generation worker found 270 not unmistakably screen-left and last three poses gaze screen-right; coherent whole-row resynthesis required.",
+  "recorded_at": "2026-10-14T03:33:24.975551+00:00"
+}

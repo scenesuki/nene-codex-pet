@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\waving-gesture-r2\\frames",
+  "states": [
+    "waving"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\waving-gesture-r2\\frames\\waving\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12312,
+          "bbox": [
+            46,
+            5,
+            145,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 10
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\waving-gesture-r2\\frames\\waving\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12120,
+          "bbox": [
+            47,
+            5,
+            145,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 12
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\waving-gesture-r2\\frames\\waving\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12362,
+          "bbox": [
+            46,
+            5,
+            145,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 14
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\waving-gesture-r2\\frames\\waving\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12197,
+          "bbox": [
+            47,
+            5,
+            145,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 14
+        }
+      ]
+    }
+  ]
+}

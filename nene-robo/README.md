@@ -45,7 +45,7 @@
 ## 最终交付与实际验收
 
 - 安装文件：本目录的 `pet.json`、`spritesheet.webp`。
-- 下载：[项目 v1.1.0 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.1.0) 的 `nene-robo-v1.0.0.zip`，内含 `nene-robo/`，附完整GIF预览和说明。SHA-256见同次发布的 `SHA256SUMS.txt`。项目发布版本为1.1.0，本套机器人素材版本为1.0.0。
+- 下载：[项目 v1.1.0 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.0) 的 `nene-robo-v1.0.0.zip`，内含 `nene-robo/`，附完整GIF预览和说明。SHA-256见同次发布的 `SHA256SUMS.txt`。项目发布版本为1.1.0，本套机器人素材版本为1.0.0。
 - 本地发布副本：`../release-assets/v1.1.0/nene-robo-v1.0.0.zip`。原本地交付包归档到 `../release-assets/v1.1.0/previous-packages/nene-robo-v1.0.0/`；发布副本更新了下载说明，图集和动画未改动。
 - 预览：`preview/animation-overview.gif`、9个状态GIF、`preview/look-directions.gif`、两张静态检查表。
 - 提示词与来源：`source/imagegen-jobs.json` 指向 `source/prompts/` 的正式及修复提示词。全部图像经内置imagegen生成或整行编辑，原图与候选均保留于 `source/decoded/`。
@@ -60,4 +60,12 @@
 
 2026-10-13 用户结束细微警告修复，未采用的 r1–r7 素材、r2/r4 合成候选及检查记录按类别归档到 `source/*/warning-repair/`。状态与位置见 [修复归档索引](source/qa/warning-repair/README.md)，全部制作资料见 [source/README.md](source/README.md)。本目录顶层安装文件和 `preview/` 继续使用已交付的机器人素材 1.0.0。
 
-后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地副本位于 `../release-assets/v1.1.1/`。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。旧的单套打包脚本保存在 `source/previous-distribution/1.0.0/package_pet.py`，仅作历史记录。
+后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地副本位于 `../release-assets/v1.1.1/`。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。旧的单套打包脚本保存在 `source/previous-distribution/1.0.0/package_pet.py`，仅作历史记录。
+
+## 后续安装记录（2026-10-14）
+
+按用户要求，已将本套顶层 `pet.json` 与 `spritesheet.webp` 安装到 `C:\Users\tieha\.codex\pets\nene-robo`。安装文件与工作区成品逐字节一致，并通过本机实际图片、版本及路径校验函数检查，见 [installed-validation.json](installed-validation.json)。现有宠物文件保持不变；未切换当前宠物，应用设置列表识别与浮动显示尚未实测。此记录更新先前制作交付阶段的未安装状态；现有发布 ZIP 保留原样，安装记录由后续新 Release 纳入。
+
+## 项目更名与全量发布（2026-10-14）
+
+项目及 GitHub 仓库现命名为 `nene_codex_pets`。[v1.2.1 全量 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) 包含校服、宁宁机器人和新舞台服三套宠物，以及完整预览与安装校验记录。本套宠物 ID 和导入文件保持原名；历史发布附件保留原名和原字节。

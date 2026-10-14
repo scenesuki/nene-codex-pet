@@ -1,6 +1,6 @@
 # 项目目标
 
-项目及 GitHub 仓库名称为 `nene-codex-pet`，制作《Project SEKAI》角色草薙宁宁（Kusanagi Nene）的 Codex 桌面宠物。本仓库支持多个宠物版本及多套造型，具体造型由用户在每次实际制作前指定。
+项目及 GitHub 仓库名称为 `nene_codex_pets`，制作《Project SEKAI》角色草薙宁宁（Kusanagi Nene）的 Codex 桌面宠物。本仓库支持多个宠物版本及多套造型，具体造型由用户在每次实际制作前指定。
 
 ## 开始制作前
 
@@ -17,7 +17,7 @@
 按实际需要创建以下子目录，不提前创建空目录：
 
 ```text
-nene-codex-pet/
+nene_codex_pets/
   AGENTS.md               # 项目工作约定
   README.md               # 项目入口、宠物列表和安装说明
   NOTICE.md               # 同人作品与原素材权利说明
@@ -54,9 +54,9 @@ nene-codex-pet/
 ## 全量 Release
 
 - 每次新 Release 同时包含仓库内所有宠物的成品资源。以根目录 `*/pet.json` 自动清点宠物，任何一套缺少必需文件都应停止打包，不能只上传本次新增或修改的宠物。
-- 从仓库根目录运行 `python scripts/build_release.py --tag vX.Y.Z`，生成 `release-assets/<tag>/nene-codex-pet-<tag>.zip`、`SHA256SUMS.txt`、`package-check.json` 和 `release-notes.md`。使用新的项目版本号，保留已有版本目录。
+- 从仓库根目录运行 `python scripts/build_release.py --tag vX.Y.Z`，生成 `release-assets/<tag>/nene_codex_pets-<tag>.zip`、`SHA256SUMS.txt`、`package-check.json` 和 `release-notes.md`。使用新的项目版本号，保留已有版本目录。
 - 全量 ZIP 包含根 README、NOTICE，以及每套 `<pet-id>/` 的顶层 `pet.json`、`spritesheet.webp`、README、NOTICE、`validation.json`、可用的 `installed-validation.json` 和整个 `preview/`。`source/` 中的源素材和未采用候选保存在仓库，发布素材取宠物目录顶层成品。
-- 打包后运行 `python scripts/verify_release.py release-assets/<tag>/nene-codex-pet-<tag>.zip`，确认 ZIP 的宠物 ID 集合与根目录清点结果完全一致，各资源与工作区成品逐字节一致；同时核对 SHA-256。新增宠物会自动纳入后续全量包。
+- 打包后运行 `python scripts/verify_release.py release-assets/<tag>/nene_codex_pets-<tag>.zip`，确认 ZIP 的宠物 ID 集合与根目录清点结果完全一致，各资源与工作区成品逐字节一致；同时核对 SHA-256。新增宠物会自动纳入后续全量包。
 - 用户授权发布时，上传同一全量包及其 `SHA256SUMS.txt`，发布说明列出全部宠物。上传后核对附件清单与下载哈希，将回执保存到对应版本目录。不要使用归档的单宠物打包或发布脚本创建新 Release。
 - 已发布版本保留附件及回执原样；本地旧候选包放到所属项目版本的 `previous-packages/`，历史脚本放到 `historical-scripts/`。本地整理和打包不自动更新线上 Release。
 

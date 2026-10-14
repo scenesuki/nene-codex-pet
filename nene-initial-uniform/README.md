@@ -88,6 +88,10 @@ GIF 用于查看每个状态的循环；应用会按实际任务状态调度动�
 
 ## 项目整理与发布
 
-项目名及 GitHub 仓库名为 `nene-codex-pet`。本套目录为仓库根目录的 `nene-initial-uniform/`，采用与参考项目相同的顶层导入文件、`preview/`、`source/` 和共用 `scripts/` 结构。全部原文件内容在移动时以 SHA-256 核对保留，记录见 `source/qa/project-reorganization.json`。
+项目名及 GitHub 仓库名为 `nene_codex_pets`。本套目录为仓库根目录的 `nene-initial-uniform/`，采用与参考项目相同的顶层导入文件、`preview/`、`source/` 和共用 `scripts/` 结构。全部原文件内容在移动时以 SHA-256 核对保留，记录见 `source/qa/project-reorganization.json`。
 
-旧导入包及原验收记录保存在 `source/previous-distribution/`。历史 JSON 报告中的旧绝对路径是制作时的证据；当前操作以本 README 和仓库脚本为准。发布附件不提交 Git，在 [v1.0.0 Release](https://github.com/scenesuki/nene-codex-pet/releases/tag/v1.0.0) 下载。
+旧导入包及原验收记录保存在 `source/previous-distribution/`。历史 JSON 报告中的旧绝对路径是制作时的证据；当前操作以本 README 和仓库脚本为准。发布附件不提交 Git，在 [v1.0.0 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.0.0) 下载。
+
+## 项目更名与全量发布（2026-10-14）
+
+项目及 GitHub 仓库现命名为 `nene_codex_pets`。[v1.2.1 全量 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) 包含校服、宁宁机器人和新舞台服三套宠物，以及完整预览与安装校验记录。本套宠物 ID 和导入文件保持原名；历史发布附件保留原名和原字节。

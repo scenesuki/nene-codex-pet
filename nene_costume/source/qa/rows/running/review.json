@@ -1,0 +1,130 @@
+{
+  "ok": false,
+  "frames_root": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames",
+  "states": [
+    "running"
+  ],
+  "errors": [
+    "running frame 02 is empty or too sparse (2 pixels)",
+    "running frame 03 is empty or too sparse (7 pixels)",
+    "running frame 05 is empty or too sparse (1 pixels)"
+  ],
+  "warnings": [
+    "running frame 01 is much larger than the row median (19750 vs 6634)",
+    "running frame 02 is much smaller than the row median (2 vs 6634)",
+    "running frame 03 is much smaller than the row median (7 vs 6634)",
+    "running frame 05 is much smaller than the row median (1 vs 6634)"
+  ],
+  "rows": [
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": false,
+      "errors": [
+        "running frame 02 is empty or too sparse (2 pixels)",
+        "running frame 03 is empty or too sparse (7 pixels)",
+        "running frame 05 is empty or too sparse (1 pixels)"
+      ],
+      "warnings": [
+        "running frame 01 is much larger than the row median (19750 vs 6634)",
+        "running frame 02 is much smaller than the row median (2 vs 6634)",
+        "running frame 03 is much smaller than the row median (7 vs 6634)",
+        "running frame 05 is much smaller than the row median (1 vs 6634)"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13999,
+          "bbox": [
+            40,
+            5,
+            151,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 45
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19750,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 42
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 2,
+          "bbox": [
+            95,
+            103,
+            97,
+            104
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 2
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7,
+          "bbox": [
+            94,
+            102,
+            98,
+            106
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 7
+        },
+        {
+          "index": 4,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13262,
+          "bbox": [
+            5,
+            49,
+            187,
+            158
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 26
+        },
+        {
+          "index": 5,
+          "file": "D:\\\u9879\u76ee\\pet_2\\nene_costume\\source\\qa\\rows\\running\\frames\\running\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 1,
+          "bbox": [
+            95,
+            103,
+            96,
+            104
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        }
+      ]
+    }
+  ]
+}

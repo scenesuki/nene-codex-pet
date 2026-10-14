@@ -1,0 +1,54 @@
+{
+  "worker": "look10_r2_diagnostic",
+  "blinded_to_intended_directions": true,
+  "observations": [
+    {
+      "cell": 1,
+      "horizontal": "screen-left",
+      "vertical": "down",
+      "evidence": "Both irises low and left, nose/chin slightly left"
+    },
+    {
+      "cell": 2,
+      "horizontal": "screen-left",
+      "vertical": "down",
+      "evidence": "Irises lowered and left of center, nose/chin slightly left"
+    },
+    {
+      "cell": 3,
+      "horizontal": "screen-left",
+      "vertical": "down",
+      "evidence": "Irises lowered and left, nose/chin slightly left"
+    },
+    {
+      "cell": 4,
+      "horizontal": "ambiguous",
+      "vertical": "level",
+      "evidence": "Nose points left; visible iris direction unclear"
+    },
+    {
+      "cell": 5,
+      "horizontal": "ambiguous",
+      "vertical": "level",
+      "evidence": "Nose points left; visible iris direction unclear"
+    },
+    {
+      "cell": 6,
+      "horizontal": "screen-right",
+      "vertical": "up",
+      "evidence": "Irises high/right and nose/chin right"
+    },
+    {
+      "cell": 7,
+      "horizontal": "screen-right",
+      "vertical": "up",
+      "evidence": "Irises high/right and nose/chin right"
+    },
+    {
+      "cell": 8,
+      "horizontal": "screen-right",
+      "vertical": "up",
+      "evidence": "Irises high/right and nose/chin right"
+    }
+  ]
+}

@@ -57,7 +57,7 @@ def build_release(root, tag):
     for file in files:
         assert file.is_file(), f"Missing deliverable: {file}"
     output.mkdir(parents=True)
-    archive = output / f"nene-codex-pet-{tag}.zip"
+    archive = output / f"nene_codex_pets-{tag}.zip"
     with zipfile.ZipFile(archive, "x", compression=zipfile.ZIP_DEFLATED) as package:
         for file in files:
             package.write(file, file.relative_to(root).as_posix())
@@ -68,7 +68,7 @@ def build_release(root, tag):
     (output / "SHA256SUMS.txt").write_text(f"{report['sha256']}  {archive.name}\n", encoding="utf-8", newline="\n")
     (output / "package-check.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n",
                                               encoding="utf-8", newline="\n")
-    notes = f"# nene-codex-pet {tag}\n\n完整宠物合集：\n\n"
+    notes = f"# nene_codex_pets {tag}\n\n完整宠物合集：\n\n"
     notes += "\n".join(f"- `{pet['id']}`：{pet['display_name']}。" for pet in inventory)
     notes += (f"\n\n下载 `{archive.name}` 及 `SHA256SUMS.txt`，解压后将所需宠物目录复制到 "
               "`~/.codex/pets/`。每套均附安装文件、说明、校验记录和完整预览；制作源素材保留在仓库。\n\n"
