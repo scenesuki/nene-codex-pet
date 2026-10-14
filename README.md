@@ -1,56 +1,67 @@
 # nene_codex_pets
 
-《Project SEKAI》草薙宁宁（Kusanagi Nene）的非官方 Codex 桌面宠物项目。
+草薙宁宁的 Codex 桌面宠物合集。三套造型，各有9种状态动画与16个注视方向。
 
-| 宠物 | 造型与画风 | 规格 |
+**[下载三套合集 · v1.2.1](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.2.1/nene_codex_pets-v1.2.1.zip)** · [校验和](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.2.1/SHA256SUMS.txt) · [更新记录](https://github.com/scenesuki/nene_codex_pets/releases)
+
+## 选一位宁宁
+
+| 初始校服 | 宁宁机器人 | Brand New Style |
+| :---: | :---: | :---: |
+| <a href="nene-initial-uniform/README.md"><img src="nene-initial-uniform/preview/readme-portrait.png" alt="草薙宁宁初始校服" width="144"></a> | <a href="nene-robo/README.md"><img src="nene-robo/preview/readme-portrait.png" alt="宁宁机器人原始造型" width="144"></a> | <a href="nene_costume/README.md"><img src="nene_costume/preview/readme-portrait.png" alt="草薙宁宁 Brand New Style 舞台服" width="144"></a> |
+| 神山高校校服 · Q版日系插画 | 原始演出服 · 贴近游戏原画 | 新舞台服 · Q版日系插画 |
+| [造型与说明](nene-initial-uniform/README.md) · [查看动画](nene-initial-uniform/preview/animation-overview.gif) | [造型与说明](nene-robo/README.md) · [查看动画](nene-robo/preview/animation-overview.gif) | [造型与说明](nene_costume/README.md) · [查看动画](nene_costume/preview/animation-overview.gif) |
+
+## 三步安装
+
+1. 下载上方合集 ZIP，使用同版 `SHA256SUMS.txt` 核对校验和，再解压。
+2. 将想使用的宠物目录复制到 `~/.codex/pets/`，确保目录内同时有 `pet.json` 和 `spritesheet.webp`。
+3. 打开 Codex 设置 > Pets，刷新并选择对应造型；必要时重启应用。
+
+Windows 默认目录为 `%USERPROFILE%\.codex\pets\`；自定义 `CODEX_HOME` 时，使用其下的 `pets/`。三套宠物可同时安装，由你选择当前使用的一套。
+
+<details>
+<summary>规格与验证范围</summary>
+
+- Codex桌面v2格式：无损RGBA WebP，1536×2288；8×11格，单格192×208。
+- 已核对动画帧数、透明边缘、方向语义和循环预览；三套安装文件均已核对哈希，并重放本机实际图片、版本及路径验证函数。
+- **应用设置识别、选用及桌面浮动显示尚未实测。** 验证依据为 `OpenAI.Codex_26.1007.2314.0`，详细记录与已接受的细微问题见各套README。
+- 首屏静态图直接提取自各套最终交付图集。完整动画通过上方链接查看，所有预览也保存在发布包中。
+
+</details>
+
+<details>
+<summary>版本与历史下载</summary>
+
+| 版本 | 实际内容 | 附件 |
 | --- | --- | --- |
-| [草薙宁宁 · 初始校服](nene-initial-uniform/README.md) | 初始神山高校校服，参考 1 星卡「爱损人的社交恐惧者」；Q 版日系插画 | v2，9 种动画、16 个注视方向 |
-| [宁宁机器人 · 原始造型](nene-robo/README.md) | 官方原始 Robo-Nene 演出服，贴近游戏原画 | v2，9 种动画、16 个注视方向；[v1.1.0 下载](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.0) |
-| [nene_costume · Brand New Style](nene_costume/README.md) | 二星卡对应的新舞台服；Q 版日系插画 | v2，9 种动画、16 个注视方向；[v1.2.1 下载](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) |
+| [v1.2.1](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) | 校服、机器人、新舞台服三套合集；项目更名为 `nene_codex_pets` | `nene_codex_pets-v1.2.1.zip` |
+| [v1.1.1](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) | 校服与机器人两套合集 | `nene-codex-pet-v1.1.1.zip` |
+| [v1.1.0](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.0) | 机器人单套包 | `nene-robo-v1.0.0.zip` |
+| [v1.0.0](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.0.0) | 初始校服单套包 | `nene-codex-pet-v1.0.0.zip` |
 
-![动画总览](nene-initial-uniform/preview/animation-overview.gif)
+从v1.1.1起，新Release采用全量合集。历史附件保留原名称；本地v1.2.0仅为未发布的制作快照。
 
-![宁宁机器人动画总览](nene-robo/preview/animation-overview.gif)
+</details>
 
-![nene_costume 动画总览](nene_costume/preview/animation-overview.gif)
+<details>
+<summary>项目结构与全量打包</summary>
 
-## 下载与安装
+每套宠物在根目录独立存放，顶层为导入文件，`preview/`为预览，`source/`为参考、提示词、源图、候选和验收记录。共用脚本在`scripts/`；本地发布资源在`release-assets/<tag>/`，不提交Git。
 
-在 [Releases](https://github.com/scenesuki/nene_codex_pets/releases) 下载所需造型：初始校服包为 `nene-codex-pet-v1.0.0.zip`（v1.0.0），机器人包为 `nene-robo-v1.0.0.zip`（项目 v1.1.0）。解压分别得到 `nene-initial-uniform/` 或 `nene-robo/`。
-
-从 [v1.1.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) 起，每次 Release 提供全量合集，包含所有宠物的安装文件、说明、校验记录和完整预览。`nene-codex-pet-v1.1.1.zip` 同时包含校服与机器人；已有历史版本继续保留。
-
-[v1.2.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) 使用新项目名 `nene_codex_pets`，附件 `nene_codex_pets-v1.2.1.zip` 包含校服、机器人和 `nene_costume` 共三套宠物，以及各套安装校验记录和完整预览。此前本地 v1.2.0 包保留作为历史制作快照。
-
-1. 将该目录复制到 `~/.codex/pets/`；Windows 默认路径为 `%USERPROFILE%\.codex\pets\`。若设置了 `CODEX_HOME`，使用其下的 `pets/`。
-2. 确保 `pets/<pet-id>/pet.json` 与 `spritesheet.webp` 同时存在，宠物 ID 使用上面的文件夹名称。
-3. 打开 Codex 的设置 > Pets，刷新列表并选择对应造型；如未显示，重新启动应用。
-
-也可从本仓库的对应宠物目录复制这两个文件。ZIP 附带说明、验证记录及动画总览，其余文件不影响加载。每次 Release 的 `SHA256SUMS.txt` 用于核对其下载包。
-
-## 验证范围
-
-最终无损 RGBA WebP 为 1536 × 2288，8 × 11 格，每格 192 × 208。已检查动画帧数、透明边缘、方向语义、循环预览及包内文件一致性，校服与机器人已在制作机安装目录检查文件哈希；新舞台服也已按后续安装请求安装，并重放实际应用的版本、图片及路径验证算法；未切换当前宠物。
-
-**应用设置列表中的识别、选用及浮动显示尚未实测。** 本机验证依据为 `OpenAI.Codex_26.1007.2314.0` 的实际加载与渲染代码，不保证所有未来版本的界面或合同一致。详细来源和验收记录见 [初始校服 README](nene-initial-uniform/README.md) 、[机器人 README](nene-robo/README.md) 与 [新舞台服 README](nene_costume/README.md)。
-
-## 项目结构
-
-每套宠物在根目录独立存放；最终导入文件位于宠物目录顶层，`preview/` 保存预览，`source/` 保存参考、提示词、原始生成结果、候选和检查记录。`scripts/` 保存共用辅助脚本；`release-assets/<tag>/` 保存本地发布附件，不提交 Git。完整约定见 [AGENTS.md](AGENTS.md)。
-
-制作资料和旧包均保留。辅助验证脚本中涉及本机应用安装包的检查需要相应 Windows 版本及路径；预览和打包脚本使用 Python 与 Pillow。
-
-## 全量打包
-
-从项目根目录运行以下命令，版本号使用尚未存在的新标签：
+从项目根目录运行，`vX.Y.Z`替换为尚未存在的新版本：
 
 ```powershell
-python scripts/build_release.py --tag v1.2.1
-python scripts/verify_release.py release-assets/v1.2.1/nene_codex_pets-v1.2.1.zip
+python scripts/build_release.py --tag vX.Y.Z
+python scripts/verify_release.py release-assets/vX.Y.Z/nene_codex_pets-vX.Y.Z.zip
 ```
 
-脚本自动读取根目录所有 `*/pet.json`，验证每套成品和全部 GIF 后打包；缺少资源时停止，已有版本目录不会被覆盖。每次发布上传该合集 ZIP 和同目录的 `SHA256SUMS.txt`，下载后复核哈希。新附件统一命名为 `nene_codex_pets-<tag>.zip`，历史版本保留原附件名。制作源素材与未采用候选保留在仓库，按目录顶层成品发布。
+脚本自动清点根目录全部`*/pet.json`，核对成品、全部GIF与ZIP文件一致性；缺少资源时停止，已有版本不会覆盖。发布时上传合集ZIP及同目录的`SHA256SUMS.txt`，核对下载哈希。源素材、候选和旧包继续保留。
 
-本地发布目录索引见 `release-assets/README.md`；机器人制作与候选归档索引见 [source/README.md](nene-robo/source/README.md)。完整流程见 [AGENTS.md](AGENTS.md)。
+工作约定见[AGENTS.md](AGENTS.md)，机器人归档索引见[source/README.md](nene-robo/source/README.md)。本地发布目录索引位于`release-assets/README.md`。辅助验证脚本依赖对应Windows应用安装包；预览与打包使用Python及Pillow。
 
-本项目为非官方同人作品，权利说明见 [NOTICE.md](NOTICE.md)。
+</details>
+
+---
+
+《Project SEKAI》非官方同人项目。角色及参考素材权利归原权利人所有，详见[NOTICE.md](NOTICE.md)。
