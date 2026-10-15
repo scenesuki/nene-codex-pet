@@ -94,9 +94,9 @@ Windows默认位置为`%USERPROFILE%\.codex\pets\nene-robo\`；自定义`CODEX_H
 
 ### 迭代归档与全量发布
 
-2026-10-13 用户结束细微警告修复，未采用的 r1–r7 素材、r2/r4 合成候选及检查记录按类别归档到 `source/*/warning-repair/`。状态与位置见 [修复归档索引](source/qa/warning-repair/README.md)，全部制作资料见 [source/README.md](source/README.md)。本目录顶层安装文件和 `preview/` 继续使用已交付的机器人素材 1.0.0。
+当前导入文件和 `preview/` 对应已交付的机器人素材1.0.0；未采用候选及旧分发快照已按用户要求清理。有效制作资料见 [source/README.md](source/README.md)。
 
-后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地副本位于 `../release-assets/v1.1.1/`。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。旧的单套打包脚本保存在 `source/previous-distribution/1.0.0/package_pet.py`，仅作历史记录。
+后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地旧ZIP已清理，线上附件保留。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。本地仅保留当前全量合集ZIP，版本说明与发布回执保留。
 
 ### 后续安装记录（2026-10-14）
 

@@ -40,16 +40,16 @@ nene_codex_pets/
       prompts/            # 生成提示词
       qa/                 # 制作验收记录
       references/         # 本套参考与合同依据
-      previous-distribution/ # 需保留的旧发布包及其记录
 ```
 
 - 每套宠物的参考、源素材、预览和导入文件都留在自己的目录内，禁止混存到仓库根目录或其他宠物目录。共用脚本放入 `scripts/`；按版本打包的发布附件放入 `release-assets/<tag>/`。
-- 导入文件在宠物目录顶层；`source/final/` 保存制作过程产物，不作为安装入口。旧包只归档，不删除。
+- 导入文件在宠物目录顶层；`source/final/` 保存制作过程产物，不作为安装入口。本地仅保留当前完整合集ZIP；历史包和旧分发快照按用户授权清理，线上Release不随本地整理删除。
 - 在该套 README.md 中明确记录宠物 ID、造型名称和关键外观特征，使文件与造型能够对应。
 - 需要借用另一套素材时，说明来源并将本套使用的副本保存在自己的目录；修改本套副本，保留原套素材。
 - 迭代优先修改当前套目录。影响其他套宠物的公共文件变更必须说明影响范围并验证相关产物。
 - 为需要保留的不同候选版本使用明确文件名；最终交付文件在 README.md 中标明，避免用含糊的“最新版”识别成品。
-- 停止或未采用的修复迭代按类别集中到 `source/{decoded,final,prompts,qa,references}/warning-repair/`，由 `source/qa/warning-repair/README.md` 标明状态和位置。归档移动保留原文件字节，用移动清单对应历史记录中的旧路径；历史制作脚本仅作记录，恢复制作前复核路径。
+- `nene_costume_2` 仅保留当前确认的成品及其有效源素材；文档、验收和后续打包统一引用该成果，不保留其他候选或过程对比。安装和分发均以当前成品及当前完整合集为准。
+- 停止或未采用的迭代按需归档；用户授权清理后，先核对当前成品、有效源素材及引用，再删除候选和重复产物，并同步文档与脚本。正式预览统一存放在各套 `preview/`，避免在 `source/qa/` 重复保存相同图片或动图。
 
 ## README 排版与展示
 
@@ -64,11 +64,11 @@ nene_codex_pets/
 ## 全量 Release
 
 - 每次新 Release 同时包含仓库内所有宠物的成品资源。以根目录 `*/pet.json` 自动清点宠物，任何一套缺少必需文件都应停止打包，不能只上传本次新增或修改的宠物。
-- 从仓库根目录运行 `python scripts/build_release.py --tag vX.Y.Z`，生成 `release-assets/<tag>/nene_codex_pets-<tag>.zip`、`SHA256SUMS.txt`、`package-check.json` 和 `release-notes.md`。使用新的项目版本号，保留已有版本目录。
-- 全量 ZIP 包含根 README、NOTICE，以及每套 `<pet-id>/` 的顶层 `pet.json`、`spritesheet.webp`、README、NOTICE、`validation.json`、可用的 `installed-validation.json` 和整个 `preview/`。`source/` 中的源素材和未采用候选保存在仓库，发布素材取宠物目录顶层成品。
+- 从仓库根目录运行 `python scripts/build_release.py --tag vX.Y.Z`，生成 `release-assets/<tag>/nene_codex_pets-<tag>.zip`、`SHA256SUMS.txt`、`package-check.json` 和 `release-notes.md`。使用新的项目版本号；仅在用户授权清理时移除旧本地包，保留发布说明和回执。
+- 全量 ZIP 包含根 README、NOTICE，以及每套 `<pet-id>/` 的顶层 `pet.json`、`spritesheet.webp`、README、NOTICE、`validation.json`、可用的 `installed-validation.json` 和整个 `preview/`。`source/` 中的有效源素材保存在仓库，发布素材取宠物目录顶层成品。
 - 打包后运行 `python scripts/verify_release.py release-assets/<tag>/nene_codex_pets-<tag>.zip`，确认 ZIP 的宠物 ID 集合与根目录清点结果完全一致，各资源与工作区成品逐字节一致；同时核对 SHA-256。新增宠物会自动纳入后续全量包。
 - 用户授权发布时，上传同一全量包及其 `SHA256SUMS.txt`，发布说明列出全部宠物。上传后核对附件清单与下载哈希，将回执保存到对应版本目录。不要使用归档的单宠物打包或发布脚本创建新 Release。
-- 已发布版本保留附件及回执原样；本地旧候选包放到所属项目版本的 `previous-packages/`，历史脚本放到 `historical-scripts/`。本地整理和打包不自动更新线上 Release。
+- 线上已发布附件及回执保持原样；本地历史ZIP、旧分发快照和临时预览按用户授权清理，版本说明及发布回执保留。本地整理和打包不自动更新或删除线上Release。
 
 ## Release 标题与简介
 
@@ -127,5 +127,5 @@ nene_codex_pets/
 ## 安全边界与交付说明
 
 - 删除文件或目录、重置 Git 历史、强制推送、修改密钥或生产配置、安装全局包及大范围升级依赖，必须先说明必要性并获得用户明确授权。
-- 保留已有参考、源素材和成品。覆盖需要保留的候选版本前，先采用新文件名保存。
+- 保留当前有效参考、源素材和成品；清理历史包、无效候选或重复产物须有用户授权并先核对引用。覆盖需要保留的候选版本前，先采用新文件名保存。
 - 默认使用中文沟通。交付时简要说明完成内容、所属宠物 ID 与造型、文件位置、已执行的验证及未解决的问题。

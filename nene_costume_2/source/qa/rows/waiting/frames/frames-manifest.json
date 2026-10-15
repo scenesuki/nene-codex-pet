@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "waiting",
+      "frames": [
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\00.png",
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\01.png",
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\02.png",
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\03.png",
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\04.png",
+        "D:\\项目\\pet_2\\nene_costume_2\\source\\qa\\rows\\waiting\\frames\\waiting\\05.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "package_directory": "C:\\Users\\tieha\\.codex\\pets\\nene_costume_2",
+  "package_files": [
+    "pet.json",
+    "spritesheet.webp"
+  ],
+  "id": "custom:nene_costume_2",
+  "display_name": "nene_costume_2",
+  "sprite_version": 2,
+  "decoded_dimensions": {
+    "width": 1536,
+    "height": 2288
+  },
+  "format": "webp",
+  "spritesheet_sha256": "b71cb435de3effa51cf9723179bc67b3e51e5ab964d7fc8f9c6bebe1a0bfdfda",
+  "app_validator_source": "C:/Program Files/WindowsApps/OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0/app/resources/app.asar::.vite/build/src-DCNiwad_.js",
+  "app_validator_module_sha256": "86fb2066bbc2f7428864b76b46ef570b09eb1e92e81e9d6f089f5b048a66df25",
+  "method": "installed files: byte-for-byte comparison with workspace and read-only replay of actual app image/version and path validators; app UI not tested",
+  "installed_at": "2026-10-14T11:14:54.244Z",
+  "source_files_match": true,
+  "manifest_sha256": "a1b624468545475de9d467da18a348b07499a92573fea5752be69a1c77b8e004",
+  "application_ui_detection_verified": false,
+  "floating_display_verified": false,
+  "current_pet_changed": false
+}

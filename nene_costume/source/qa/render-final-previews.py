@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw
 
 root = Path(__file__).resolve().parents[2]
 atlas = Image.open(root / "source/final/spritesheet-extended.webp").convert("RGBA")
-output = root / "source/qa/cleaned-previews"
+output = root / "preview"
 output.mkdir(exist_ok=True)
 states = {
     "idle": [280, 110, 110, 140, 140, 320],

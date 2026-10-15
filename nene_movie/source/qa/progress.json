@@ -1,0 +1,59 @@
+{
+  "pet_id": "nene_movie",
+  "started_at": "2026-10-15T05:15:39.126752+00:00",
+  "steps": [
+    {
+      "name": "核实卡面与规格",
+      "status": "complete"
+    },
+    {
+      "name": "制作角色基准图",
+      "status": "complete"
+    },
+    {
+      "name": "制作九状态与十六方向",
+      "status": "complete"
+    },
+    {
+      "name": "验证并交付本地成品",
+      "status": "complete"
+    }
+  ],
+  "style": "Q版日系插画",
+  "delivery": "完整可导入宠物、九种动画、十六方向及预览；本地成品，不安装或上传",
+  "generation_started_at": "2026-10-15T05:24:30.057484+00:00",
+  "checkpoints": [
+    {
+      "at": "2026-10-15T05:32:00.219350+00:00",
+      "status": "Approved compact base after one tall candidate and one invalid-reference attempt; idle/right/wave generation inparallel",
+      "remaining": "9standardrows, sequentialcardinals+look9+look10, finalQA andlocalpackage",
+      "time_plan": "Prioritizeexactcanonicalrefs andstatecounts, nooptionalvisualpolish"
+    },
+    {
+      "at": "2026-10-15T05:37:45.574868+00:00",
+      "status": "6standardrows passstructuralchecks; failedspacingrepair plusworking/review generationinparallel",
+      "remaining": "3standardrows thenstandardvisualgate andcardinals/lookrows/finalQA",
+      "jump_extraction": "autoallcellbottom203confirmed; native stable-slots selected topreserveactualsourcearc"
+    },
+    {
+      "at": "2026-10-15T05:40:23.617189+00:00",
+      "elapsed_generation_minutes": 16,
+      "status": "8of9standardrows structurallypass; onlyfailedspacedrepairpending",
+      "remaining": "standardcontactvisualgate, cardinalanchors, two sequentiallookrows, nativecleanup/blinds/finalQA/package",
+      "convergence": "one identifiedspacingrepair, nooverallregeneration"
+    },
+    {
+      "at": "2026-10-15T05:48:43.566532+00:00",
+      "status": "All9standardstates pass structural+independentfunctionalreview; 4cardinals extracted/approved; lookrow9generationactive",
+      "remaining": "registerlook9, generate/registerlook10, onecleanup/blind3/finalQA, docsandlocalfullpackage",
+      "strategy": "Nooptionalpolish; keepsequentialgates, preserveallrejectedcandidates. Browserpreviewavailablethisrun fordesktop/narrowREADMEchecks."
+    },
+    {
+      "at": "2026-10-15T05:57:13.757815+00:00",
+      "status": "look9registered andedge/semantics/continuity passed, look10generationactive",
+      "remaining": "boundedone-look-rowdependency thenfinalnativeQA/blinds/export/docs/fullpackage",
+      "quality_budget": "Continuebeyond30min onlyforconvergingrequiredchecks; nooptionalartpolish"
+    }
+  ],
+  "finished_at": "2026-10-15T06:13:04.956828+00:00"
+}

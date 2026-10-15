@@ -3,3 +3,6 @@
 *.png binary
 *.gif binary
 *.zip binary
+nene_costume_2/source/references/official-character.html -text
+nene_movie/source/references/official-movie-character.html -text
+nene_movie/source/references/official-profile.html -text
