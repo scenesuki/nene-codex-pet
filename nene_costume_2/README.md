@@ -12,7 +12,7 @@
 
 [查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md)
 
-本套纳入本地五套合集 `nene_codex_pets-v1.4.0.zip`，存放于项目的 `release-assets/v1.4.0/`，同目录提供 `SHA256SUMS.txt`。本版尚未上传GitHub或发布线上Release。
+本套包含于 **[五套完整合集 · v1.4.0](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/nene_codex_pets-v1.4.0.zip)**，下载后使用同版 [SHA256SUMS.txt](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/SHA256SUMS.txt) 核对校验和。本地副本位于 `release-assets/v1.4.0/`。
 
 ## 安装
 

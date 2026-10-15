@@ -10,7 +10,7 @@
 
 ## 动画与下载
 
-[查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md) · **[下载三套合集](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1)**
+[查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md) · **[下载五套合集](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.4.0)**
 
 ## 安装
 
