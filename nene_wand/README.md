@@ -10,35 +10,41 @@
 
 ## 动画与下载
 
-[查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md)
+[动画总览](preview/animation-overview.gif) · [十六方向](preview/look-directions.gif) · [全部预览](preview/README.md) · [静态全帧](preview/contact-sheet.png)
 
-最终导入入口为本目录顶层的 [pet.json](pet.json) 和 [spritesheet.webp](spritesheet.webp)。本套已纳入 [v1.6.2七套完整合集](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.6.2)，本地附件位于 `release-assets/v1.6.2/`；此前v1.6.1保留为未发布的制作快照。本套尚未安装，本次发布不自动安装或切换当前宠物。
+最终导入文件：[pet.json](pet.json) 与 [spritesheet.webp](spritesheet.webp)。本套包含在[v1.7.2八套完整合集](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/nene_codex_pets-v1.7.2.zip)，下载后用同版[SHA256SUMS.txt](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/SHA256SUMS.txt)核对校验和。历史附件从[GitHub Release](https://github.com/scenesuki/nene_codex_pets/releases)下载，内容以对应版本说明为准。
 
 ## 安装
 
-将本套 `pet.json` 与 `spritesheet.webp` 一起复制到 `~/.codex/pets/nene_wand/`。Windows默认为 `%USERPROFILE%\.codex\pets\nene_wand\`；自定义 `CODEX_HOME` 时使用其下的 `pets/nene_wand/`。在Codex设置 > Pets中刷新并选择「nene_wand」，必要时重启应用。本次不自动安装或切换当前宠物。
+1. 解压合集，将 `nene_wand/` 复制至 `~/.codex/pets/`，同时保留两个导入文件。
+2. Windows默认位置为 `%USERPROFILE%\.codex\pets\nene_wand\`；自定义 `CODEX_HOME` 时使用其下的 `pets/nene_wand/`。
+3. 在Codex设置 > Pets中刷新并选择「nene_wand」，必要时重启应用。
+
+本套尚未安装，本次不执行安装或切换。 应用设置识别及桌面浮动显示尚未实测。
 
 <details>
 <summary>规格与验收</summary>
 
-- 2026-10-16只读核实本机 `OpenAI.Codex_26.1007.9446.0` 的加载器与渲染器，依据及模块SHA-256见 [应用规格记录](source/costume-correction-20261016/references/app-contract-verification.json)，未借用ChatGPT Work Pets规格。
-- Codex原生v2：1536×2288无损RGBA WebP，8列11行、单格192×208，`spriteVersionNumber: 2`。九状态为idle、running-right、running-left、waving、jumping、failed、waiting、running、review，帧数6/8/8/4/5/8/6/6/6；其中running为驻足思考处理中，移动由两条方向状态承担。后两行从正上方000°开始顺时针每22.5°一个注视方向。
-- 最终图集通过未经修改的原生v2尺寸、布局、透明度与空格校验，见 [validation.json](validation.json)。透明像素隐藏RGB为零；单次边缘处理前后Alpha逐字节一致，静态图为最终待机首帧原始RGBA裁切。
-- 九状态与十六方向通过独立顺序帧视觉复核，全部GIF帧数、时长及解码检查通过；三份隔离盲审合并后上下左右四主方向全部通过。045°、112.5°、202.5°、225°和292.5°部分分量在盲审中不明确，带标签复核符合预期象限；157.5°→180°及337.5°→000°存在细微姿态变化，独立复核认为不构成明显跳变。详见 [最终视觉记录](source/costume-correction-20261016/qa/final-visual-qa.json)、[方向逐格记录](source/costume-correction-20261016/qa/direction-semantics.json)、[盲审](source/costume-correction-20261016/qa/direction-blind-validation.json)及[复核说明](source/costume-correction-20261016/qa/blind-review-resolution.json)。
-- 已只读重放本机实际图像、版本及路径校验函数，见 [加载校验](preview/app-loader-validation.json)。**本套未安装；设置识别、桌面浮动显示、GIF播放器实时播放及README桌面/窄屏实际渲染尚未实测。** 逐帧解码和静态顺序检查不代表实测播放。
-- 成品、来源、静态图、文档链接、原有六套导入文件保护与旧包哈希检查见 [交付检查](source/costume-correction-20261016/qa/delivery-check.json)。
+- 原生Codex v2，无损RGBA WebP，1536×2288，8列11行，单格192×208，`spriteVersionNumber: 2`。[应用规格依据](preview/app-contract-verification.json)来自制作时对本机实际应用的只读检查。
+- 九状态为待机、左右移动、招手、跳跃、失落、等待回应、思考处理中、审视，帧数6/8/8/4/5/8/6/6/6；后两行从正上方000°开始顺时针每22.5°一个，共16方向。`running`表示站定处理任务，左右移动由两条方向状态承担。
+- [当前图集校验](validation.json)通过：尺寸、布局、必需格、透明空格及透明像素隐藏RGB符合要求。[原视觉验收摘要](preview/visual-qa.json)保留最终接受结论。
+- [逐方向记录](preview/direction-semantics.json)与[独立盲审汇总](preview/direction-blind-validation.json)保留当前视线的验收依据。已接受的细微限制：045°、112.5°、202.5°、225°、292.5°的部分视线分量较细；两行交界存在轻微换姿，带标签复核未见错象限、反转或明显跳变。
+- [GIF文件检查](preview/preview-files-check.json)已解码全部11个GIF，核对数量、尺寸与时长，总览为1680ms。[加载算法检查](preview/app-loader-validation.json)仅表示当时重放实际应用的图片、版本与路径验证函数。
+- 静态图为最终待机首帧192×208原始RGBA裁切。实际播放器动态播放、应用内显示、README桌面/窄屏显示及折叠交互尚未实测。
 
 </details>
 
 <details>
 <summary>参考与制作记录</summary>
 
-- [SEGA官方公告](https://prtimes.jp/main/html/rd/p/000003548.000005397.html)核实卡名、草薙宁宁与「全力！ワンダーハロウィン！」活动。原公告图裁掉了腿部，不能作为完整衣装依据。
-- 完整衣装依据[社区转载的角色设计资料页](https://www.bilibili.com/opus/854907901648568377)，不是已经核实的官方直链下载。保留[整页扫描](source/references/costume-recheck/nene-design-sheet-scan.jpg)与[本套完整角色原像素裁切](source/references/costume-recheck/wand-full-outfit-reference.png)，可见短裙、露膝、红袜、鞋饰及手杖全长；裁切未重采样、未混用同页其他造型。来源与哈希见 [完整参考检查](source/costume-correction-20261016/qa/full-reference-check.json)。
-- 用户指出原卡面下方是蜷起的腿。完整资料确认一条腿向后屈起，旧图误读出的长裤、白手套与卷钩杖头均撤回。桌面基准改为双脚站立属于动作演绎；衣装不再凭裁切图补全。此前长裤版仅作[旧分发归档](source/previous-distribution/before-costume-correction-20261016/archive-note.json)，旧v1.6.0本地包保留并标记暂缓分发。
-- [官方角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)用于性格依据：不擅社交、说话直率，喜欢游戏、音乐剧和电影，擅长歌唱与机器操作。眨眼待机、克制招手、等待回应、托腮思考和轻微审视点头均为据此设计的创作演绎，不作为官方剧情动作。
-- 本次基准、九状态和十六方向均按完整衣装重新生成，角色图像未复用旧长裤版。设计见 [design-brief.md](source/references/design-brief.md)，新一轮[生成清单](source/costume-correction-20261016/imagegen-jobs.json)与[进度记录](source/costume-correction-20261016/qa/progress.json)保留来源和未采用候选；先前造型验收不再代表当前结果。
-- 原生提取与组装负责透明分格和定位；跳跃使用原生stable-slots保留真实起落轨迹。边缘处理沿用此前已复现并修正选择条件的脚本副本，本轮从未处理图集执行一次；原生验证器及阈值未改，见 [实现依据](source/costume-correction-20261016/qa/despill-implementation-reuse.json)。
-- 当前制作图集为 `source/costume-correction-20261016/final/spritesheet-extended.webp`，安装使用本目录顶层成品。制作工具代码沿用本套已有流程；原图、提示词与QA留在本套source，不随成品ZIP分发。
+- [SEGA官方公告](https://prtimes.jp/main/html/rd/p/000003548.000005397.html)
+- [社区转载的角色设计资料页](https://www.bilibili.com/opus/854907901648568377)
+- [官方角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)
+
+完整衣装以社区转载的角色设计资料核对，未核实官方直链；可见膝上短裙、露膝、红袜、鞋饰及手杖全长。双脚站立属于桌面动作演绎。
+
+原作角色资料与卡面用于外观和性格依据；转绘、站立姿态和安静眨眼、克制招手、期待回应、思考及审视动作均为创作演绎，不宣称为官方原动画。
+
+正式成果由当前导入文件、正式预览、来源说明与最终验收记录组成。仓库保留当前成果选用的原始生成图、有效参考图、实际生成输入和提示词，索引为 `source/materials-index.json`；原素材不纳入安装ZIP。未采用废案、重复制作缓存及旧本地包按授权清理，图集和动画像素保持原样。权利说明见[NOTICE.md](NOTICE.md)。部分验收JSON内的制作路径是历史元数据，当前使用入口以本页和顶层导入文件为准。
 
 </details>

@@ -1,10 +1,24 @@
-# nene_movie · 素材索引
+# nene_movie · 制作原素材
 
-- 当前导入入口为宠物目录顶层 `pet.json`、`spritesheet.webp`；`preview/` 为成品预览。
-- `references/`：卡1084游戏数据、卡面镜像及下载哈希、性格资料和应用格式依据。官方电影舞台服及校服设定图明确排除为本套服装参考，不参与正式生成。
-- `decoded/`：当前选定的原始生成图和正方向锚点；未采用候选已清理。
-- `frames/`：分格素材；`final/`：中间图集、边缘处理前后完整图集；安装使用顶层成品。
-- `prompts/production/`：本轮正式状态与注视提示词；生成来源及最终选择以 `imagegen-jobs.json` 为准。
-- `qa/`：分组检查、连续性、三名隔离盲测、独立最终视觉验收、预览解码与交付核对；`qa/pipeline-issues.json` 记录修订与输入路径问题。
+当前导入入口为宠物目录顶层的 `pet.json`、`spritesheet.webp`，正式预览与最终验收位于 `../preview/`。
 
-完整参考与外观补全说明见本套README。已安装并核对成品一致性，未切换当前宠物或上传GitHub。
+- [素材索引](materials-index.json)记录当前成果选用的原始生成图、实际输入、有效提示词及SHA-256。
+- 原始生成图、参考原图和提示词保留原有字节；历史生成清单中的旧路径仅作原始记录，现存文件以素材索引为准。
+- 少量实际输入来自先前候选，其有效输入副本保存在 `references/selected-inputs/` 并列入索引，其余未采用候选已清理。
+- 分格帧、重复组装图集和诊断预览属于可重建缓存；不作为安装入口，也不纳入合集ZIP。有效参考依据与创作补全见[本套说明](../README.md)。
+
+| 生成任务 | 选用的原始生成图 |
+| --- | --- |
+| `base` | [decoded/base.png](decoded/base.png) |
+| `idle` | [decoded/idle.png](decoded/idle.png) |
+| `running-right` | [decoded/running-right.png](decoded/running-right.png) |
+| `running-left` | [decoded/running-left.png](decoded/running-left.png) |
+| `waving` | [decoded/waving.png](decoded/waving.png) |
+| `jumping` | [decoded/jumping.png](decoded/jumping.png) |
+| `failed` | [decoded/failed.png](decoded/failed.png) |
+| `waiting` | [decoded/waiting.png](decoded/waiting.png) |
+| `running` | [decoded/running.png](decoded/running.png) |
+| `review` | [decoded/review.png](decoded/review.png) |
+| `look-cardinals` | [decoded/look-cardinals.png](decoded/look-cardinals.png) |
+| `look-row-9` | [decoded/look-row-9.png](decoded/look-row-9.png) |
+| `look-row-10` | [decoded/look-row-10.png](decoded/look-row-10.png) |

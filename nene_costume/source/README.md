@@ -1,15 +1,24 @@
-# nene_costume 制作资料
+# nene_costume · 制作原素材
 
-本套造型为草薙宁宁二星「Brand New Style」新舞台服，Q版日系插画。这里的文件用于制作追溯；安装入口始终为上一层的 `pet.json` 和 `spritesheet.webp`。
+当前导入入口为宠物目录顶层的 `pet.json`、`spritesheet.webp`，正式预览与最终验收位于 `../preview/`。
 
-- `references/`：官方立绘、卡号738资料、实际Codex合同、角色基准、布局图与五参考限制所需的无缩放组合图。
-- `prompts/`：角色及各状态提示词，包含后八方向整行修订提示。
-- `decoded/`：各状态选定原图、四正方向及修订、两张完整八方向源图；明确含 `rejected` 或 `initial` 的文件为保留候选，不用于安装。
-- `frames/`：标准动画分格及提取记录；跳跃采用已有稳定分槽提取以保留生成图的真实纵向弧线。
-- `final/spritesheet-extended.webp`：清理后的1536×2288无损RGBA最终源图集，与顶层交付图集字节相同。`spritesheet-extended-before-despill.*` 保留处理前产物；普通 `spritesheet.*` 是8×9标准动画中间图，不能作本次安装入口。
-- `qa/`：原始失败记录、注册、边缘、盲测、连续性、独立视觉验收、原有宠物保留检查及本套预览/原生算法验证脚本副本。
-- `pet_request.json`、`imagegen-jobs.json`：本套请求、视觉任务与选定原图的完整来源和哈希。
+- [素材索引](materials-index.json)记录当前成果选用的原始生成图、实际输入、有效提示词及SHA-256。
+- 原始生成图、参考原图和提示词保留原有字节；历史生成清单中的旧路径仅作原始记录，现存文件以素材索引为准。
+- 少量实际输入来自先前候选，其有效输入副本保存在 `references/selected-inputs/` 并列入索引，其余未采用候选已清理。
+- 分格帧、重复组装图集和诊断预览属于可重建缓存；不作为安装入口，也不纳入合集ZIP。有效参考依据与创作补全见[本套说明](../README.md)。
 
-前八方向采用 `qa/look-row-9-registered-r2.png` 和其注册比例；首次注册诊断及其他候选均保留。后八方向最终来自一次完整整行生成编辑，未将独立生成的单格拼入成品。三个隔离盲测的原始意见、多数汇总、隐藏答案键和显示重排的逐块像素一致性记录均保留。
-
-单次边缘清理只修复RGB色边，保留alpha；以 `qa/chroma-despill-extended.json` 与最终验证为准。未删除生成工具的外部原图，未安装、切换宠物或上传GitHub。
+| 生成任务 | 选用的原始生成图 |
+| --- | --- |
+| `base` | [decoded/base.png](decoded/base.png) |
+| `idle` | [decoded/idle.png](decoded/idle.png) |
+| `running-right` | [decoded/running-right.png](decoded/running-right.png) |
+| `running-left` | [decoded/running-left.png](decoded/running-left.png) |
+| `waving` | [decoded/waving.png](decoded/waving.png) |
+| `jumping` | [decoded/jumping.png](decoded/jumping.png) |
+| `failed` | [decoded/failed.png](decoded/failed.png) |
+| `waiting` | [decoded/waiting.png](decoded/waiting.png) |
+| `running` | [decoded/running.png](decoded/running.png) |
+| `review` | [decoded/review.png](decoded/review.png) |
+| `look-cardinals` | [decoded/look-cardinals.png](decoded/look-cardinals.png) |
+| `look-row-9` | [decoded/look-row-9.png](decoded/look-row-9.png) |
+| `look-row-10` | [decoded/look-row-10.png](decoded/look-row-10.png) |

@@ -10,104 +10,43 @@
 
 ## 动画与下载
 
-[查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md) · **[下载五套合集](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.4.0)**
+[动画总览](preview/animation-overview.gif) · [十六方向](preview/look-directions.gif) · [全部预览](preview/README.md) · [静态全帧](preview/contact-sheet.png)
+
+最终导入文件：[pet.json](pet.json) 与 [spritesheet.webp](spritesheet.webp)。本套包含在[v1.7.2八套完整合集](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/nene_codex_pets-v1.7.2.zip)，下载后用同版[SHA256SUMS.txt](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/SHA256SUMS.txt)核对校验和。历史附件从[GitHub Release](https://github.com/scenesuki/nene_codex_pets/releases)下载，内容以对应版本说明为准。
 
 ## 安装
 
-1. 下载并解压合集，使用同版`SHA256SUMS.txt`核对校验和。
-2. 将`nene-robo/`复制到`~/.codex/pets/`，使`pet.json`和`spritesheet.webp`同时位于该目录。
-3. 在Codex设置 > Pets中刷新，选择「宁宁机器人 · 原始造型」；必要时重启应用。
+1. 解压合集，将 `nene-robo/` 复制至 `~/.codex/pets/`，同时保留两个导入文件。
+2. Windows默认位置为 `%USERPROFILE%\.codex\pets\nene-robo\`；自定义 `CODEX_HOME` 时使用其下的 `pets/nene-robo/`。
+3. 在Codex设置 > Pets中刷新并选择「宁宁机器人 · 原始造型」，必要时重启应用。
 
-Windows默认位置为`%USERPROFILE%\.codex\pets\nene-robo\`；自定义`CODEX_HOME`时使用其下的`pets/nene-robo/`。
-
-制作机已完成本机安装文件与加载算法检查，见[安装校验](installed-validation.json)。**应用设置识别与浮动显示尚未实测。**
+已保存[安装文件校验](installed-validation.json)；本次未修改本机已安装宠物。 应用设置识别及桌面浮动显示尚未实测。
 
 <details>
-<summary>规格与验收 · 展开查看</summary>
+<summary>规格与验收</summary>
 
-以下保留制作阶段的规格依据和验收记录；其中“未安装”等阶段性表述，以上方当前安装状态及后续安装记录为准。
-
-### 目标规格与来源
-
-2026-10-13 再次只读核对本机 `OpenAI.Codex_26.1007.2314.0_x64__2p2nqsd0c76g0` 的 `app/resources/app.asar`：渲染与本地图片加载代码仍接受 v2，图集 1536 × 2288、8 列 × 11 行、单格 192 × 208。代码摘录与 SHA-256 保存在 `source/references/app-contract-verification.json`。
-
-| 行 | 用途 | 使用帧数 |
-| --- | --- | --- |
-| 0–8 | idle、running-right、running-left、waving、jumping、failed、waiting、running、review | 6、8、8、4、5、8、6、6、6 |
-| 9–10 | 顺时针注视方向，以向上为 0°，每次 22.5° | 各 8 |
-
-输出无损 RGBA WebP；`pet.json` 指定 `spriteVersionNumber: 2` 和 `spritesheetPath: spritesheet.webp`。备用中性格沿用 hatch-pet 组装合同，其余未使用格完全透明。实际支持通过应用代码核对；不采用 ChatGPT Work Pets 的上传规格。
-
-安装方式：将本套 `pet.json` 与 `spritesheet.webp` 同时复制到 `CODEX_HOME/pets/nene-robo/`（默认 `~/.codex/pets/nene-robo/`），在设置 > Pets 中刷新并选择。此轮尚未执行安装、应用界面识别或浮动显示验证。
-
-### 文件与验收
-
-制作资料位于 `source/`，参考图在 `source/references/`，预览位于 `preview/`，最终导入文件位于本目录顶层。最终路径与实际验收结果如下。
-
-### 最终交付与实际验收
-
-- 安装文件：本目录的 `pet.json`、`spritesheet.webp`。
-- 下载：[项目 v1.1.0 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.0) 的 `nene-robo-v1.0.0.zip`，内含 `nene-robo/`，附完整GIF预览和说明。SHA-256见同次发布的 `SHA256SUMS.txt`。项目发布版本为1.1.0，本套机器人素材版本为1.0.0。
-- 本地发布副本：`../release-assets/v1.1.0/nene-robo-v1.0.0.zip`。原本地交付包归档到 `../release-assets/v1.1.0/previous-packages/nene-robo-v1.0.0/`；发布副本更新了下载说明，图集和动画未改动。
-- 预览：`preview/animation-overview.gif`、9个状态GIF、`preview/look-directions.gif`、两张静态检查表。
-- 提示词与来源：`source/imagegen-jobs.json` 指向 `source/prompts/` 的正式及修复提示词。全部图像经内置imagegen生成或整行编辑，原图与候选均保留于 `source/decoded/`。
-
-验收：无损RGBA WebP为1536×2288、8×11格；必需帧完整、边界合格、透明隐藏RGB残留为0，图集校验无错误或警告。只执行一次全图边缘清理，alpha逐像素保持不变。九种动画与完整16方向经独立视觉复核通过；三项隔离盲测的四正方向均通过严格多数判定。最终GIF全部帧解码、尺寸/帧数/时长、ZIP内容与校验和已核对。
-
-接受的细微警告：157.5°/202.5°的水平轴、067.5°/112.5°的垂直轴在孤立盲测中较模糊；45°/315°与相邻方向差别较细。337.5°回到0°时头部回正幅度稍大，完整循环复核确认身体、脚、服装锚点与尺度稳定，无显著跳变。裙侧球饰和短杆的负空间为原有造型空隙，未见裙装裂缝。详见 `source/qa/direction-semantics.json`、`blind-review-resolution.json` 与 `final-visual-qa.json`。
-
-还对交付文件重放了本机安装包的实际图片/版本及路径验证函数，v2接受、v1拒绝，见 `preview/app-loader-validation.json`。从仓库根目录运行 `node nene-robo/source/qa/verify-package-loader.mjs` 可复核（需要相同Windows应用版本及路径）。这是工作区文件的加载算法检查。本套尚未安装到用户宠物目录，应用界面识别、选用和浮动显示未验证。
+- 原生Codex v2，无损RGBA WebP，1536×2288，8列11行，单格192×208，`spriteVersionNumber: 2`。[应用规格依据](preview/app-contract-verification.json)来自制作时对本机实际应用的只读检查。
+- 九状态为待机、左右移动、招手、跳跃、失落、等待回应、思考处理中、审视，帧数6/8/8/4/5/8/6/6/6；后两行从正上方000°开始顺时针每22.5°一个，共16方向。`running`表示站定处理任务，左右移动由两条方向状态承担。
+- [当前图集校验](validation.json)通过：尺寸、布局、必需格、透明空格及透明像素隐藏RGB符合要求。[原视觉验收摘要](preview/visual-qa.json)保留最终接受结论。
+- [逐方向记录](preview/direction-semantics.json)与[独立盲审汇总](preview/direction-blind-validation.json)保留当前视线的验收依据。已接受的细微限制：157.5°、202.5°横向和067.5°、112.5°纵向分量较细；045°、315°同邻格差别较小，337.5°回正稍明显，完整循环复核未见明显跳变。
+- [GIF文件检查](preview/preview-files-check.json)已解码全部11个GIF，核对数量、尺寸与时长，总览为1680ms。[加载算法检查](preview/app-loader-validation.json)仅表示当时重放实际应用的图片、版本与路径验证函数。
+- 静态图为最终待机首帧192×208原始RGBA裁切。实际播放器动态播放、应用内显示、README桌面/窄屏显示及折叠交互尚未实测。
 
 </details>
 
 <details>
-<summary>参考与制作记录 · 展开查看</summary>
+<summary>参考与制作记录</summary>
 
-### 参考与设计
+- [日文官方角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)
+- [英文官方资料](https://www.colorfulstage.com/characters/wonderlands-showtime/nene/index.html?year=past)
+- [游戏剧情截图整理](https://game-question.com/qa/project_sekai/1347c27f-3404-473b-a2b9-3167a065d192)
+- [官方商品包装照片（第三方卖家）](https://www.ebay.com/itm/405696609821)
+- [游戏一格漫画整理](https://gameo.jp/pjsekai/494)
 
-1. [日文官方角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)与[英文官方资料](https://www.colorfulstage.com/characters/wonderlands-showtime/nene/index.html?year=past)：宁宁操作机器人代为登台。安静、认真和略带吐槽感来自宁宁的设定。
-2. [游戏剧情截图整理](https://game-question.com/qa/project_sekai/1347c27f-3404-473b-a2b9-3167a065d192)：`source/references/game-story-robo.jpg` 核对原始机器人头脸、紫色圆眼、灰绿机械发束、粉色领结与蝶形头饰。
-3. [官方商品包装照片（第三方卖家）](https://www.ebay.com/itm/405696609821)：`source/references/official-figure-box-art.jpg` 中的包装插画核对全身原始服装、比例、裙摆及鞋子。商品摄影背景、文字、材质和底座不进入生成素材。
-4. [游戏一格漫画整理](https://gameo.jp/pjsekai/494)：`game-comic-40.png` 核对惊讶表情与机器人设定。`game-comic-38.png` 是不相关检索对照，排除生成输入。
+原始机器人外观以剧情截图和商品包装插画交叉核对；第三方整理页与卖家照片并非官方直接下载。
 
-排除的其他参考：当前官网 `card_2.png.webp` 实为其他时期卡图，与本套无关；`game-robo-object.png` 是另一时期游戏摆件服装；`official-figure-packaging.jpg` 有明显包装反光，仅作辅助对照。已下载文件均保留。
+原作角色资料与卡面用于外观和性格依据；转绘、站立姿态和安静眨眼、克制招手、期待回应、思考及审视动作均为创作演绎，不宣称为官方原动画。
 
-关键外观：宽大灰绿头部、斜刘海、低扎粗发束与粉色发圈、绿色发箍、角色左侧（画面右侧）浅绿粉边蝶形头饰、紫色圆眼和脸部面板接缝；青绿马甲与黄色纽扣、粉色条纹领结、浅黄和奶白分片裙摆、短腿和深青绿圆鞋。裙侧紫色球饰通过实心短杆连接，不绘制悬浮装饰。
-
-动作是创作演绎：安静眨眼、小步机械行走、拘谨招手、短促弹跳、故障时低头停顿、等待时举手询问、工作时认真运算、检查时转头审视。不将这些动画宣称为游戏原动画。
-
-### 初始制作约定
-
-以下为制作开始时的约定，后续安装与发布记录见下文。
-
-- 宠物 ID：`nene-robo`。
-- 造型：官方原始ネネロボ／Robo-Nene，黄裙与青绿马甲的演出服。
-- 画风：用户确认的“贴近游戏原画”；清晰轮廓、赛璐璐阴影、原始大头短身机器人比例。
-- 交付：完整可导入 Codex 桌面宠物、9 种动画及 16 个注视方向、动画预览。制作验收完成后，用户另行授权上传 GitHub。
-
-### 制作进度
-
-- [x] 确定造型、画风、交付目标并复核本机规格。
-- [x] 制作并检查角色基准图：`source/references/canonical-base.png`。
-- [x] 制作与检查9种动画及16个注视方向。
-- [x] 验收并打包：本套本地交付版本1.0.0。
-
-### 迭代归档与全量发布
-
-当前导入文件和 `preview/` 对应已交付的机器人素材1.0.0；未采用候选及旧分发快照已按用户要求清理。有效制作资料见 [source/README.md](source/README.md)。
-
-后续项目 Release 同时包含全部宠物。[项目 v1.1.1 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) 的 `nene-codex-pet-v1.1.1.zip` 包含本套与初始校服，本地旧ZIP已清理，线上附件保留。共用打包入口是 `../scripts/build_release.py --tag <新版本>`。本地仅保留当前全量合集ZIP，版本说明与发布回执保留。
-
-### 后续安装记录（2026-10-14）
-
-按用户要求，已将本套顶层 `pet.json` 与 `spritesheet.webp` 安装到 `C:\Users\tieha\.codex\pets\nene-robo`。安装文件与工作区成品逐字节一致，并通过本机实际图片、版本及路径校验函数检查，见 [installed-validation.json](installed-validation.json)。现有宠物文件保持不变；未切换当前宠物，应用设置列表识别与浮动显示尚未实测。此记录更新先前制作交付阶段的未安装状态；现有发布 ZIP 保留原样，安装记录由后续新 Release 纳入。
-
-### 项目更名与全量发布（2026-10-14）
-
-项目及 GitHub 仓库现命名为 `nene_codex_pets`。[v1.2.1 全量 Release](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) 包含校服、宁宁机器人和新舞台服三套宠物，以及完整预览与安装校验记录。本套宠物 ID 和导入文件保持原名；历史发布附件保留原名和原字节。
+正式成果由当前导入文件、正式预览、来源说明与最终验收记录组成。仓库保留当前成果选用的原始生成图、有效参考图、实际生成输入和提示词，索引为 `source/materials-index.json`；原素材不纳入安装ZIP。未采用废案、重复制作缓存及旧本地包按授权清理，图集和动画像素保持原样。权利说明见[NOTICE.md](NOTICE.md)。部分验收JSON内的制作路径是历史元数据，当前使用入口以本页和顶层导入文件为准。
 
 </details>
-
----
-
-[返回合集](../README.md) · [权利说明](NOTICE.md) · [制作资料](source/)

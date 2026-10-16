@@ -32,24 +32,25 @@ nene_codex_pets/
     spritesheet.webp      # 最终导入图集
     validation.json       # 最终文件校验
     installed-validation.json # 本机安装文件校验（如已执行）
-    preview/              # 动画预览、截图和检查结果
-    source/
-      decoded/            # 原始生成结果及保留候选
-      frames/             # 分格动画素材
-      final/              # 组装及边缘处理产物
-      prompts/            # 生成提示词
-      qa/                 # 制作验收记录
-      references/         # 本套参考与合同依据
+    preview/              # 正式预览、应用规格依据和最终验收记录
+    source/               # 当前成果的有效制作原素材
+      README.md
+      materials-index.json # 原素材、实际输入及提示词的路径与哈希
+      decoded/            # 选用的原始生成结果
+      references/         # 有效参考原图及实际生成输入
+      prompts/            # 有效制作提示词
 ```
 
-- 每套宠物的参考、源素材、预览和导入文件都留在自己的目录内，禁止混存到仓库根目录或其他宠物目录。共用脚本放入 `scripts/`；按版本打包的发布附件放入 `release-assets/<tag>/`。
-- 导入文件在宠物目录顶层；`source/final/` 保存制作过程产物，不作为安装入口。本地仅保留当前完整合集ZIP；历史包和旧分发快照按用户授权清理，线上Release不随本地整理删除。
+- 每套保留顶层导入文件、说明、正式预览、最终验收及有效制作原素材，参考来源写入本套README。共用打包与验证脚本放入 `scripts/`；发布附件放入 `release-assets/<tag>/`。
+- 制作阶段可按需在本套 `source/{decoded,frames,final,prompts,qa,references}/` 保存资料；导入入口始终是宠物目录顶层。整理时保留当前成果选用的原始生成图、有效参考原图、实际生成输入和提示词，以 `source/materials-index.json` 记录路径、用途与SHA-256。有效素材可保留原有制作子目录，不为排版重命名或改写原文件。
+- 仅在用户授权后清理未采用废案、旧本地包、重复分格与组装缓存。先将最终验收收拢到README及 `preview/`，核对受保护原素材和成品的哈希；若废案曾作为当前生成的实际输入，先逐字节保留该输入并登记到素材索引，再删除其余废案。不能把所有 `source/` 文件统一当作缓存删除。
+- 本地仅保留当前完整合集ZIP。已发布版本保留轻量发布说明、校验和与回执；本地清理不修改Git历史或线上Release。
 - 在该套 README.md 中明确记录宠物 ID、造型名称和关键外观特征，使文件与造型能够对应。
 - 需要借用另一套素材时，说明来源并将本套使用的副本保存在自己的目录；修改本套副本，保留原套素材。
 - 迭代优先修改当前套目录。影响其他套宠物的公共文件变更必须说明影响范围并验证相关产物。
 - 为需要保留的不同候选版本使用明确文件名；最终交付文件在 README.md 中标明，避免用含糊的“最新版”识别成品。
 - `nene_costume_2` 仅保留当前确认的成品及其有效源素材；文档、验收和后续打包统一引用该成果，不保留其他候选或过程对比。安装和分发均以当前成品及当前完整合集为准。
-- 停止或未采用的迭代按需归档；用户授权清理后，先核对当前成品、有效源素材及引用，再删除候选和重复产物，并同步文档与脚本。正式预览统一存放在各套 `preview/`，避免在 `source/qa/` 重复保存相同图片或动图。
+- 清理前记录有效原素材、当前导入文件、正式预览和已发布回执的哈希，核对引用与最终验收记录；清理后复验并同步文档。正式预览仅放在各套 `preview/`，避免重复保留相同图片或动图。
 
 ## README 排版与展示
 
@@ -58,14 +59,14 @@ nene_codex_pets/
 - 子页面顺序为造型介绍与静态小图、动画与下载链接、安装步骤、折叠的“规格与验收”、折叠的“参考与制作记录”。提供返回合集的入口。
 - README 使用静态图展示角色，动画总览、单状态动画及注视方向通过文字链接访问，不内嵌播放 GIF 或堆叠大面积动图。
 - 静态展示图从本套最终交付的 `spritesheet.webp` 提取待机首帧，保留原始 RGBA 像素，保存为本套 `preview/readme-portrait.png`；展示宽度参考约 144px，仅指定宽度，保持固有比例并适应窄屏。
-- 保留有效的规格、验收、来源及历史记录，通过重新组织和折叠降低首屏信息量；历史阶段状态明确标注，当前安装、发布及未验证状态以最新记录为准。
+- 保留有效规格、来源及最终验收记录，通过折叠降低首屏信息量；历史下载指向对应线上Release，当前安装、发布及未验证状态以最终记录为准。
 - 使用 GitHub 可正常渲染的 Markdown 和简单 HTML。完成后核对本地链接、图片路径、静态图与成品一致性，并检查桌面与窄屏显示、折叠交互；同步 GitHub 后核对实际渲染。
 
 ## 全量 Release
 
 - 每次新 Release 同时包含仓库内所有宠物的成品资源。以根目录 `*/pet.json` 自动清点宠物，任何一套缺少必需文件都应停止打包，不能只上传本次新增或修改的宠物。
 - 从仓库根目录运行 `python scripts/build_release.py --tag vX.Y.Z`，生成 `release-assets/<tag>/nene_codex_pets-<tag>.zip`、`SHA256SUMS.txt`、`package-check.json` 和 `release-notes.md`。使用新的项目版本号；仅在用户授权清理时移除旧本地包，保留发布说明和回执。
-- 全量 ZIP 包含根 README、NOTICE，以及每套 `<pet-id>/` 的顶层 `pet.json`、`spritesheet.webp`、README、NOTICE、`validation.json`、可用的 `installed-validation.json` 和整个 `preview/`。`source/` 中的有效源素材保存在仓库，发布素材取宠物目录顶层成品。
+- 全量 ZIP 包含根 README、NOTICE，以及每套 `<pet-id>/` 的顶层 `pet.json`、`spritesheet.webp`、README、NOTICE、`validation.json`、可用的 `installed-validation.json` 和整个 `preview/`。发布素材只取当前成品与正式记录，不纳入制作缓存、候选或旧分发快照。
 - 打包后运行 `python scripts/verify_release.py release-assets/<tag>/nene_codex_pets-<tag>.zip`，确认 ZIP 的宠物 ID 集合与根目录清点结果完全一致，各资源与工作区成品逐字节一致；同时核对 SHA-256。新增宠物会自动纳入后续全量包。
 - 用户授权发布时，上传同一全量包及其 `SHA256SUMS.txt`，发布说明列出全部宠物。上传后核对附件清单与下载哈希，将回执保存到对应版本目录。不要使用归档的单宠物打包或发布脚本创建新 Release。
 - 线上已发布附件及回执保持原样；本地历史ZIP、旧分发快照和临时预览按用户授权清理，版本说明及发布回执保留。本地整理和打包不自动更新或删除线上Release。

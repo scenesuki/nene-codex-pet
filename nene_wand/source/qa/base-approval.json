@@ -1,9 +1,0 @@
-{
-  "ok": true,
-  "reviewed_by": "parent using generationworker actualvisualQA",
-  "head_ratio_estimate": 2.5,
-  "style": "Compact Q Japanese illustration",
-  "identity": "Redtailcoat,goldstripedpants,whitegloves,blackformalshoes,clearpalesagehair/violeteyes,nohat; correctLEFThandcanecontinuousshaft/tip.",
-  "minor_acceptance": "Slightlylonglegs stillcompactQ; userdidnotrequireexactnumeric2.2.",
-  "hard_failures": []
-}

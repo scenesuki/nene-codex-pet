@@ -1,7 +1,0 @@
-Create ONE full-body Kusanagi Nene in a very compact Japanese-anime CHIBI style. Attached card is exact costume/hair/color reference ONLY, not adult proportions. Huge round head about45percent of total height, tiny torso and short legs; approximately2.2heads from headtop to soles. Keep the recognisable long pale sage-gray loosehair and large violet eyes, reserved tiny smile, original bangs. NO HAT.
-
-Red stage tailcoat: black lapels and black split long coattails edged gold, white pleated shirtfront, small blue/orange neckbow with gold ornament, gold buttons and gold cuffchain details, white gloves. Compact black/navy trousers with gold verticalstripes; very shortlegs with black roundtoe lowheel formalshoes (approved unseen completion). Do not invent a skirt, fan or hat.
-
-Anatomical LEFT glovedhand (screenright when frontal) firmly holds a GOLD SCROLL-HANDLE cane at waist, with a slim solid BLACK shaft continuing close alongside body to near shoelevel. Keep cane attached through hand, thick enough to read in tiny sprite, nofloatingpieces. FreeRIGHT hand rests close to waist. Face, both eyes, nose and mouth clear. Do not copy the cropped adult pose or longbody from card.
-
-Single centered wholefigure, complete hair/coattails/cane tip/shoe soles, generous empty margins. Crisp cleanlinework, soft cel shading, opaque drawing on perfectlyflat #FF00FF background. No text, logos, labels, grid, scenery, floor, shadow, effects or newprops.

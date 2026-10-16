@@ -1,0 +1,9 @@
+{
+  "visual_qa": "pass",
+  "spritesheet_sha256": "723b46a711e42e17f42a736a7368710f0891111cc05e475bb62779d0b24a70e1",
+  "record_type": "Final acceptance summary preserved during cleanup; not a new visual review",
+  "reviewed_by": "independent visual reviewer",
+  "qa_note": "The cleaned comparison shows a clearly smaller, gentle hop. The five jump poses look coherent, with mild knee and leg movement and no huge leap, odd limbs, visible pop, or jump-row clipping. The decoded state sheet and contact sheet show the expected poses and no apparent loop seam in the ordered frames. The validator reports RGBA output with zero transparent RGB residue, chroma-key pixels, or chroma fringe pixels.",
+  "accepted_minor_limitations": "135°、157.5°、202.5°、225°、247.5°横向提示较细，顺序复核未见错象限或反转。当前跳跃为8px离地、伞顶起伏12px的小跳。",
+  "scope": "Original ordered decoded-frame review; live GIF playback and app UI not verified."
+}

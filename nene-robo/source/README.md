@@ -1,16 +1,24 @@
-# 宁宁机器人制作资料索引
+# nene-robo · 制作原素材
 
-最终安装入口为上级目录的 `pet.json` 和 `spritesheet.webp`，正式预览位于上级 `preview/`。宠物ID保持 `nene-robo`。
+当前导入入口为宠物目录顶层的 `pet.json`、`spritesheet.webp`，正式预览与最终验收位于 `../preview/`。
 
-| 目录 | 内容 |
+- [素材索引](materials-index.json)记录当前成果选用的原始生成图、实际输入、有效提示词及SHA-256。
+- 原始生成图、参考原图和提示词保留原有字节；历史生成清单中的旧路径仅作原始记录，现存文件以素材索引为准。
+- 少量实际输入来自先前候选，其有效输入副本保存在 `references/selected-inputs/` 并列入索引，其余未采用候选已清理。
+- 分格帧、重复组装图集和诊断预览属于可重建缓存；不作为安装入口，也不纳入合集ZIP。有效参考依据与创作补全见[本套说明](../README.md)。
+
+| 生成任务 | 选用的原始生成图 |
 | --- | --- |
-| `decoded/` | 正式交付对应的原始生成图及制作素材 |
-| `frames/` | 九种状态的分帧素材 |
-| `final/` | 组装产物，`spritesheet-extended.webp` 对应顶层成品 |
-| `prompts/` | 角色及动画制作提示词 |
-| `references/` | 角色、应用格式和造型参考 |
-| `qa/` | 当前成品的验收记录与工具 |
-
-未采用候选、重复预览和旧分发快照已按用户要求清理。源素材由 `imagegen-jobs.json`、`pet_request.json` 和 `progress.md` 记录；历史报告中的路径仅代表制作时状态。
-
-新项目发布使用根目录 `scripts/build_release.py`，同时打包全部宠物。正式预览只保留 `preview/` 中的一份。
+| `base` | [decoded/base.png](decoded/base.png) |
+| `idle` | [decoded/idle.png](decoded/idle.png) |
+| `running-right` | [decoded/running-right.png](decoded/running-right.png) |
+| `running-left` | [decoded/running-left.png](decoded/running-left.png) |
+| `waving` | [decoded/waving.png](decoded/waving.png) |
+| `jumping` | [decoded/jumping.png](decoded/jumping.png) |
+| `failed` | [decoded/failed.png](decoded/failed.png) |
+| `waiting` | [decoded/waiting.png](decoded/waiting.png) |
+| `running` | [decoded/running.png](decoded/running.png) |
+| `review` | [decoded/review.png](decoded/review.png) |
+| `look-cardinals` | [decoded/look-cardinals.png](decoded/look-cardinals.png) |
+| `look-row-9` | [decoded/look-row-9.png](decoded/look-row-9.png) |
+| `look-row-10` | [decoded/look-row-10.png](decoded/look-row-10.png) |

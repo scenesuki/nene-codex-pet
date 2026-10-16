@@ -71,7 +71,7 @@ def build_release(root, tag):
     notes = f"# nene_codex_pets {tag}\n\n完整宠物合集：\n\n"
     notes += "\n".join(f"- `{pet['id']}`：{pet['display_name']}。" for pet in inventory)
     notes += (f"\n\n下载 `{archive.name}` 及 `SHA256SUMS.txt`，解压后将所需宠物目录复制到 "
-              "`~/.codex/pets/`。每套均附安装文件、说明、校验记录和完整预览；制作源素材保留在仓库。\n\n"
+              "`~/.codex/pets/`。每套均附安装文件、来源说明、最终校验记录和完整预览。\n\n"
               "本包使用各宠物目录顶层成品。已核对全量清单、ZIP字节一致性、"
               "WebP规格及全部GIF帧；应用设置识别和浮动显示尚未实测。\n")
     (output / "release-notes.md").write_text(notes, encoding="utf-8", newline="\n")

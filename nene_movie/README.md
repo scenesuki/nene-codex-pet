@@ -10,37 +10,42 @@
 
 ## 动画与下载
 
-[查看动画总览](preview/animation-overview.gif) · [查看注视方向](preview/look-directions.gif) · [全部预览](preview/README.md)
+[动画总览](preview/animation-overview.gif) · [十六方向](preview/look-directions.gif) · [全部预览](preview/README.md) · [静态全帧](preview/contact-sheet.png)
 
-本套包含于 **[五套完整合集 · v1.4.0](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/nene_codex_pets-v1.4.0.zip)**，下载后使用同版 [SHA256SUMS.txt](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/SHA256SUMS.txt) 核对校验和。本地副本位于 `release-assets/v1.4.0/`。
+最终导入文件：[pet.json](pet.json) 与 [spritesheet.webp](spritesheet.webp)。本套包含在[v1.7.2八套完整合集](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/nene_codex_pets-v1.7.2.zip)，下载后用同版[SHA256SUMS.txt](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.7.2/SHA256SUMS.txt)核对校验和。历史附件从[GitHub Release](https://github.com/scenesuki/nene_codex_pets/releases)下载，内容以对应版本说明为准。
 
 ## 安装
 
-解压并核对同版SHA-256后，将本套顶层 `pet.json` 和 `spritesheet.webp` 一起复制至 `~/.codex/pets/nene_movie/`。Windows默认为 `%USERPROFILE%\.codex\pets\nene_movie\`；自定义 `CODEX_HOME` 时使用其下的 `pets/nene_movie/`。在Codex设置 > Pets中刷新并选择「nene_movie」，必要时重启应用。本套已于2026-10-15安装至 `C:\Users\tieha\.codex\pets\nene_movie\`，两个导入文件与工作区成品逐字节一致，未切换当前宠物；记录见 [安装校验](installed-validation.json)。
+1. 解压合集，将 `nene_movie/` 复制至 `~/.codex/pets/`，同时保留两个导入文件。
+2. Windows默认位置为 `%USERPROFILE%\.codex\pets\nene_movie\`；自定义 `CODEX_HOME` 时使用其下的 `pets/nene_movie/`。
+3. 在Codex设置 > Pets中刷新并选择「nene_movie」，必要时重启应用。
+
+已保存[安装文件校验](installed-validation.json)；本次未修改本机已安装宠物。 应用设置识别及桌面浮动显示尚未实测。
 
 <details>
 <summary>规格与验收</summary>
 
-- 2026-10-15重新只读核实本机 `OpenAI.Codex_26.1007.9446.0` 的加载器与渲染器，证据及模块SHA-256见 [app-contract-verification.json](source/references/app-contract-verification.json)。
-- v2图集为1536×2288、8列11行、单格192×208，无损RGBA WebP，`spriteVersionNumber: 2`。九状态依次为idle、running-right、running-left、waving、jumping、failed、waiting、running、review，帧数6/8/8/4/5/8/6/6/6。后两行以向上为000°，顺时针16方向，每步22.5°；空白格全透明。
-- 应用读取 `CODEX_HOME/pets/<pet-id>/pet.json`，清单与图集位于同一目录顶层；下划线ID符合当前加载器规则。依据是本机实际应用，未借用ChatGPT Work Pets规格。
-- 当前导入入口为 [pet.json](pet.json) 与 [spritesheet.webp](spritesheet.webp)，[结构校验](validation.json)通过；图集尺寸、透明度、空白格与隐藏RGB检查无错误或警告。仅执行一次最终边缘处理，alpha字节保持不变。
-- 九组动画分别生成并经过逐帧复核；为保留原图中的起跳高度，跳跃采用共享取景框分格，确认未裁切或出现明显缩放跳变。左右移动分别绘制，爆米花桶始终由同一只手握持。
-- 四个正方向先通过检查，再分别整行生成前、后八个方向。后八方向严格复用前八格的注册结果和尺度。三名隔离盲测的四个正方向全部通过；067.5°、112.5°的纵向分量，135°、157.5°、202.5°、225°的横向分量在盲测中较难分辨，292.5°、315°、337.5°的左向分量也较细微。独立带标签循环复核确认没有错误象限或方向倒转，作为细微说明保留。
-- 270°→292.5°及337.5°→000°差异指标较高；独立复核未见明显跳变，后者中心位移约4.1像素。检查未发现内部透明破洞。
-- 最终GIF已逐帧解码，帧数与时长核对通过。独立视觉验收使用实际解码帧按顺序复核；其图像查看器不能播放GIF，因此不将该项写成独立播放实测。记录见 `source/qa/preview-files-check.json` 与 `source/qa/final-visual-qa.json`。
-- [本机加载算法检查](preview/app-loader-validation.json)通过，仅重放实际图片、版本与路径验证函数；应用设置识别、选用和桌面浮动显示尚未实测。其他四套宠物的八个导入文件保持原样。
-- 本地HTML预览已生成，但浏览器连接本地服务超时，宽窄屏展示及折叠交互尚未实测；链接、图片路径和静态图像素一致性另行核对。
-- 当前制作和验收记录位于本套 `source/qa/`，方向说明见 `direction-semantics.json`，盲测接受依据见 `blind-review-resolution.json`。首屏静态图是最终图集待机首帧的原始RGBA像素裁切。
+- 原生Codex v2，无损RGBA WebP，1536×2288，8列11行，单格192×208，`spriteVersionNumber: 2`。[应用规格依据](preview/app-contract-verification.json)来自制作时对本机实际应用的只读检查。
+- 九状态为待机、左右移动、招手、跳跃、失落、等待回应、思考处理中、审视，帧数6/8/8/4/5/8/6/6/6；后两行从正上方000°开始顺时针每22.5°一个，共16方向。`running`表示站定处理任务，左右移动由两条方向状态承担。
+- [当前图集校验](validation.json)通过：尺寸、布局、必需格、透明空格及透明像素隐藏RGB符合要求。[原视觉验收摘要](preview/visual-qa.json)保留最终接受结论。
+- [逐方向记录](preview/direction-semantics.json)与[独立盲审汇总](preview/direction-blind-validation.json)保留当前视线的验收依据。已接受的细微限制：067.5°、112.5°纵向，135°、157.5°、202.5°、225°及左上段横向分量较细；270°→292.5°与337.5°→000°的差异经复核接受，未见错象限或反转。
+- [GIF文件检查](preview/preview-files-check.json)已解码全部11个GIF，核对数量、尺寸与时长，总览为1680ms。[加载算法检查](preview/app-loader-validation.json)仅表示当时重放实际应用的图片、版本与路径验证函数。
+- 静态图为最终待机首帧192×208原始RGBA裁切。实际播放器动态播放、应用内显示、README桌面/窄屏显示及折叠交互尚未实测。
 
 </details>
 
 <details>
 <summary>参考与制作记录</summary>
 
-- [所选卡面公开镜像](https://anihonetwallpaper.com/post/56898)是服装、发型及道具参考；[游戏数据镜像](https://github.com/Sekai-World/sekai-master-db-diff/blob/main/cards.json)核实卡1084、角色15、二星、pure、`res015_no040`。两者均不是官方来源，快照、URL与下载哈希保存在 `source/references/`。
-- [官方游戏角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)及[官方电影角色资料](https://sh-anime.shochiku.co.jp/pjsekai-movie/character/kusanagi-nene/)用于性格依据：喜欢游戏、音乐剧和电影，擅长歌唱与机器操作。官方电影页全身图属于另一套舞台服，已明确排除为本套服装参考。
-- 安静眨眼、拘谨招手、期待回应、认真思考和审视是根据性格设计的创作演绎。爆米花桶固定同一只手握持，桶身文字简化为无字条纹。
-- 详细依据见 [design-brief.md](source/references/design-brief.md)，进度见 [progress.json](source/qa/progress.json)。
+- [所选卡面公开镜像](https://anihonetwallpaper.com/post/56898)
+- [游戏数据镜像](https://github.com/Sekai-World/sekai-master-db-diff/blob/main/cards.json)
+- [官方游戏角色资料](https://pjsekai.sega.jp/character/unite04/nene/index.html)
+- [官方电影角色资料](https://sh-anime.shochiku.co.jp/pjsekai-movie/character/kusanagi-nene/)
+
+观影卡面服装与电影舞台服分别核对；未露出的深棕圆头平底鞋经用户确认补全，保留爆米花桶。
+
+原作角色资料与卡面用于外观和性格依据；转绘、站立姿态和安静眨眼、克制招手、期待回应、思考及审视动作均为创作演绎，不宣称为官方原动画。
+
+正式成果由当前导入文件、正式预览、来源说明与最终验收记录组成。仓库保留当前成果选用的原始生成图、有效参考图、实际生成输入和提示词，索引为 `source/materials-index.json`；原素材不纳入安装ZIP。未采用废案、重复制作缓存及旧本地包按授权清理，图集和动画像素保持原样。权利说明见[NOTICE.md](NOTICE.md)。部分验收JSON内的制作路径是历史元数据，当前使用入口以本页和顶层导入文件为准。
 
 </details>

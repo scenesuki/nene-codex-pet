@@ -1,7 +1,0 @@
-{
-  "ok": false,
-  "hardfail": "270,292.5,315 wrong screen-right faces; reject entire row.",
-  "geometry_pass": true,
-  "reviewed_by": "parent and generationworker",
-  "strategy_change": "Use original full-resolution LEFT anchor as first input rather than tiny192px extracted anchor. Short explicit source-role/landmark instructions, all seven left-arc poses follow LEFT face."
-}
