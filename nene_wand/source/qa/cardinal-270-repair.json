@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "direction": "270",
+  "source_path": "C:\\Users\\tieha\\.codex\\generated_images\\01a13fea-b5b9-7cc0-99f6-15022c1b9076\\exec-ffad9a19-750e-4adc-a3fb-fc46f4eb4d6e.png",
+  "source_sha256": "d0a3cd640ed5a439d221fa9efc8a57f76e7cc78b5cad0da37d6a2d75bc0c729e",
+  "preserved_output": "D:\\\u9879\u76ee\\pet_2\\nene_wand\\source\\decoded\\look-anchors\\270-r1-wrong-hand.png",
+  "raw_copy": "D:\\\u9879\u76ee\\pet_2\\nene_wand\\source\\decoded\\look-anchor-270-repair.png",
+  "edge_pixels": 0,
+  "normalization": "native remove_chroma_background + fit_to_cell",
+  "reason": "Original left-gaze anchor exchanged cane hand; regenerate anchor only before coherent row synthesis."
+}

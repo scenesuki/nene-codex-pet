@@ -6,3 +6,5 @@
 nene_costume_2/source/references/official-character.html -text
 nene_movie/source/references/official-movie-character.html -text
 nene_movie/source/references/official-profile.html -text
+nene_wand/source/previous-distribution/** -text
+nene_wand/source/references/costume-recheck/design-brief-before-recheck.md -text

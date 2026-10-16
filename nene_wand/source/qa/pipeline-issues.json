@@ -1,0 +1,39 @@
+{
+  "issues": [
+    {
+      "jobs": [
+        "idle",
+        "running-right",
+        "failed"
+      ],
+      "failure_class": "sourceconnectivity/spacing",
+      "evidence": "Idle source2172x724, mergedpose2/3component220724px andhairx0; failedall8one616635pxcomponent; right extraction11pxframe02.",
+      "strategy_change": "Promote invisiblelayoutfirst, canonicalidentitysecond; explicit300px(8poses)/360px(6poses) sourceheight and60percent slotwidth, hair/coattails tuckedcloser. No thresholdrelax or finalcellpatch."
+    },
+    {
+      "job": "running-right",
+      "failure_class": "wrong-cachepath",
+      "resolution": "RecoveredcorrectownthreadPNGwithoutnewgeneration; neverchooseglobalmostrecent."
+    },
+    {
+      "job": "review",
+      "failure_class": "visual marks/state distinction",
+      "evidence": "Workerobserves pose4motionmarks andRIGHTface/chest hand interferingwithdistinctreview vschin-thinking.",
+      "strategy": "Whole6pose resynthesis, BOTHhandsremainwaist, onlyeyes/brows/headnod; no addedmarks.",
+      "preserved_source": "decoded/review-r1-marks.png"
+    },
+    {
+      "job": "look-row-9",
+      "failure_class": "sourceconnectivity/nativefalsepositive",
+      "evidence": "Native registration exit0 but first cell contains four joined figures and four cells have 1 alpha pixel; reject labeled native contact.",
+      "strategy": "Whole-row resynthesis with small figures and broad magenta gutters. Added native-anchor minimum400 usedpixel check to registered review. No rescale/patch/threshold waiver.",
+      "preserved_source": "decoded/look-row-9-r1-joined.png"
+    },
+    {
+      "job": "look-row-10",
+      "failure_class": "r1wrongquadrant;r2fixedscaleclipping",
+      "evidence": "r1 hadRIGHT270/292.5/315; r2 parent seesLEFT270 but source455-466px causes170-201edgepixels at fixed0.5038scale. Preserve inaccurate originalworker orientation note separately.",
+      "strategy_change": "Strengthened45degreeLEFT cardinal generated/parentapproved; alternatecardinalstrip keepsotherthreebyteidentical. Use coherentr2asFIRST whole-row resynthesis reference, reducefigureheightto85percent on SAMEcanvas rather than shrink individualfinalcells. Originalrow9basis and scale immutable."
+    }
+  ]
+}

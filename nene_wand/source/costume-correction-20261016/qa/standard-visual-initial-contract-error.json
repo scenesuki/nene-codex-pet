@@ -1,0 +1,18 @@
+{
+  "ok": false,
+  "reviewer": "skirt_standard_check",
+  "costume_identity_attachment_ok": true,
+  "failed_row": "running",
+  "reason": "Reviewer required running gait for generic running despite native contract defining stationary task work.",
+  "major_repairs_recommended": [
+    "actual running gait"
+  ],
+  "review_input": "qa/contact-sheet.png",
+  "status": "contract misunderstanding identified; independent corrected review pending",
+  "unchanged_evidence": {
+    "idle": "blink variation, body subtle",
+    "failed": "downcast/closed-eye subtle",
+    "jumping": "source arc retained without clipping",
+    "review": "low hand resting accepted"
+  }
+}

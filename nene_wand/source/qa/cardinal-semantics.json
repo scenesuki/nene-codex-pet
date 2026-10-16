@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "reviewed_by": "parent",
+  "directions": [
+    {
+      "degree": "000",
+      "verdict": "pass",
+      "reason": "Centered frontal face, chin raised, pupils high; cane screen-right."
+    },
+    {
+      "degree": "090",
+      "verdict": "pass",
+      "reason": "Nose and pupils point screen-right; body and cane remain stable."
+    },
+    {
+      "degree": "180",
+      "verdict": "pass",
+      "reason": "Chin lowered, eyes and eyelids down; centered face, cane screen-right."
+    },
+    {
+      "degree": "270",
+      "verdict": "pass",
+      "reason": "Repaired mild left head yaw, nose/pupils screen-left; free right glove screen-left waist and left glove with cane screen-right."
+    }
+  ],
+  "repair_record": "cardinal-270-repair.json"
+}

@@ -1,0 +1,89 @@
+{
+  "reviewer": "isolated /root/wand_blind_b",
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A pupils sit left of the nose; B pupils sit right."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A face and pupils turn right; B pupils sit left."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A nose and gaze point right; B gaze points left."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A nose and gaze point left; B nose and gaze point right."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-left",
+      "reason": "Both pupils sit leftward under the lowered eyelids."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-left",
+      "reason": "Both visible pupils sit toward the left side of the eyes."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Lowered eyelids obscure the pupils; no clear horizontal direction."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A pupils point down; B pupils are raised beneath open eyelids."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A pupils sit high; B lowered eyelids and pupils point down."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A gaze is lowered; B pupils sit high beneath the eyelids."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A pupils sit high; B gaze is lowered."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A pupils sit high; B pupils point down."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "down",
+      "reason": "Both lowered gazes point toward the lower face."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "down",
+      "reason": "Both lowered eyelids and pupils indicate a downward gaze."
+    }
+  ]
+}

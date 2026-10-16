@@ -1,8 +1,8 @@
 # nene_codex_pets
 
-草薙宁宁的 Codex 桌面宠物合集。五套造型，各有9种状态动画与16个注视方向。新增二星卡「Let’s enjoy the movie！」观影造型 `nene_movie`，合集版本为v1.4.0。
+草薙宁宁的 Codex 桌面宠物合集。七套造型，各有9种状态动画与16个注视方向。v1.6.2新增黑绿复古洋装 `nene_edo` 与「ワンダーステッキ」膝上条纹短裙、红色小腿袜造型 `nene_wand`，提供全部七套的完整资源与预览。
 
-**[下载五套合集 · v1.4.0](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/nene_codex_pets-v1.4.0.zip)** · [校验和](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.4.0/SHA256SUMS.txt) · [更新记录](https://github.com/scenesuki/nene_codex_pets/releases)
+**[下载七套合集 · v1.6.2](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.6.2/nene_codex_pets-v1.6.2.zip)** · [校验和](https://github.com/scenesuki/nene_codex_pets/releases/download/v1.6.2/SHA256SUMS.txt) · [更新记录](https://github.com/scenesuki/nene_codex_pets/releases)
 
 ## 选一位宁宁
 
@@ -18,11 +18,17 @@
 | 新舞台服 · Q版日系插画 | ワンダーランズ×ショウタイム · Q版日系插画 |
 | [造型与说明](nene_costume/README.md) · [查看动画](nene_costume/preview/animation-overview.gif) | [造型与说明](nene_costume_2/README.md) · [查看动画](nene_costume_2/preview/animation-overview.gif) |
 
-| Let's enjoy the movie！ · 新增 |
+| Let's enjoy the movie！ | 江戸の町並みに飲まれて · 新增 |
+| :---: | :---: |
+| <a href="nene_movie/README.md"><img src="nene_movie/preview/readme-portrait.png" alt="草薙宁宁观影造型" width="144"></a> | <a href="nene_edo/README.md"><img src="nene_edo/preview/readme-portrait.png" alt="草薙宁宁黑绿复古洋装" width="144"></a> |
+| 格纹背带长裙与爆米花桶 · Q版日系插画 | 黑绿洋装、小礼帽与金边折扇 · Q版日系插画 |
+| [造型与说明](nene_movie/README.md) · [查看动画](nene_movie/preview/animation-overview.gif) | [造型与说明](nene_edo/README.md) · [查看动画](nene_edo/preview/animation-overview.gif) |
+
+| ワンダーステッキ · 新增 |
 | :---: |
-| <a href="nene_movie/README.md"><img src="nene_movie/preview/readme-portrait.png" alt="草薙宁宁观影造型" width="144"></a> |
-| 格纹背带长裙与爆米花桶 · Q版日系插画 |
-| [造型与说明](nene_movie/README.md) · [查看动画](nene_movie/preview/animation-overview.gif) |
+| <a href="nene_wand/README.md"><img src="nene_wand/preview/readme-portrait.png" alt="草薙宁宁膝上条纹短裙、红色小腿袜与手杖" width="144"></a> |
+| 红色短外套、膝上条纹短裙与红色小腿袜 · Q版日系插画 |
+| [造型与说明](nene_wand/README.md) · [查看动画](nene_wand/preview/animation-overview.gif) |
 
 ## 三步安装
 
@@ -30,7 +36,7 @@
 2. 将想使用的宠物目录复制到 `~/.codex/pets/`，确保目录内同时有 `pet.json` 和 `spritesheet.webp`。
 3. 打开 Codex 设置 > Pets，刷新并选择对应造型；必要时重启应用。
 
-Windows 默认目录为 `%USERPROFILE%\.codex\pets\`；自定义 `CODEX_HOME` 时，使用其下的 `pets/`。各套宠物可同时安装，由你选择当前使用的一套。v1.4.0合集包含上方五套造型及完整预览。
+Windows 默认目录为 `%USERPROFILE%\.codex\pets\`；自定义 `CODEX_HOME` 时，使用其下的 `pets/`。各套宠物可同时安装，由你选择当前使用的一套。v1.6.2合集包含上方七套造型及完整预览。
 
 <details>
 <summary>规格与验证范围</summary>
@@ -38,6 +44,8 @@ Windows 默认目录为 `%USERPROFILE%\.codex\pets\`；自定义 `CODEX_HOME` �
 - Codex桌面v2格式：无损RGBA WebP，1536×2288；8×11格，单格192×208。
 - 已核对动画帧数、透明边缘、方向语义和循环预览；五套安装文件均已核对哈希，并重放本机实际图片、版本及路径验证函数。
 - 初始舞台服已安装并核对成品一致性；新增观影造型已于2026-10-15安装，两个导入文件与成品一致，未切换当前宠物。两套均已按 `OpenAI.Codex_26.1007.9446.0` 复核图集格式及加载算法；原有三套依据为 `26.1007.2314.0`。**应用设置识别、选用及桌面浮动显示尚未实测。** 详细记录与已接受的细微问题见各套README。
+- 新增 `nene_edo` 的规格、文件与视觉验收记录见其子页；已于2026-10-15安装并核对两个成品文件，未切换当前宠物，已纳入v1.6.2完整合集。
+- 新增 `nene_wand` 已依据完整参考重制为膝上短裙与红色小腿袜，九状态、十六方向及本机实际加载校验函数均通过；少数中间视线分量和跨段姿态差异记录为细微限制。已纳入v1.6.2完整合集；尚未安装，应用内显示尚未实测，详见其子页。
 - 首屏静态图直接提取自各套最终交付图集。完整动画通过上方链接查看，所有预览也保存在发布包中。
 
 </details>
@@ -47,13 +55,16 @@ Windows 默认目录为 `%USERPROFILE%\.codex\pets\`；自定义 `CODEX_HOME` �
 
 | 版本 | 实际内容 | 附件 |
 | --- | --- | --- |
+| [v1.6.2](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.6.2) | 新增江户风洋装与手杖造型，七套完整合集 | `nene_codex_pets-v1.6.2.zip` |
 | [v1.4.0](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.4.0) | 新增初始舞台服与观影造型，五套完整合集 | `nene_codex_pets-v1.4.0.zip` |
 | [v1.2.1](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.2.1) | 校服、机器人、新舞台服三套合集；项目更名为 `nene_codex_pets` | `nene_codex_pets-v1.2.1.zip` |
 | [v1.1.1](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.1) | 校服与机器人两套合集 | `nene-codex-pet-v1.1.1.zip` |
 | [v1.1.0](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.1.0) | 机器人单套包 | `nene-robo-v1.0.0.zip` |
 | [v1.0.0](https://github.com/scenesuki/nene_codex_pets/releases/tag/v1.0.0) | 初始校服单套包 | `nene-codex-pet-v1.0.0.zip` |
 
-从v1.1.1起，新Release采用全量合集。当前v1.4.0包含五套宠物，本地副本位于 `release-assets/v1.4.0/`，线上下载见上方入口。本地历史ZIP和旧分发快照已按用户要求清理，发布说明与回执保留；线上历史附件不受影响。
+从v1.1.1起，新Release采用全量合集。当前v1.6.2包含七套宠物，本地副本位于 `release-assets/v1.6.2/`，线上下载见上方入口。本地历史ZIP和旧分发快照已按用户要求清理，发布说明与回执保留；线上历史附件不受影响。
+
+本地v1.5.0、v1.6.0（衣装误读候选，暂缓分发）和v1.6.1保留为制作快照，均未上传或发布。本次完整发布版本为v1.6.2。
 
 </details>
 

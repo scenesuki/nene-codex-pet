@@ -1,0 +1,15 @@
+{
+  "visual_qa": "fail",
+  "reviewer": "skirt_final_qa",
+  "qa_note": "Nine decoded animation state rows visually pass for the requested skirt costume and attached cane. The contact sheet and 16-direction preview show trousers, which conflicts with the supplied reference and the corrected animation rows. No live playback was verified.",
+  "rows_all_nine": "pass",
+  "direction_semantics": "all16 correctly oriented; nearaxis warnings",
+  "boundary_review": "157.5→180 modest visible size/position change, minor warning, not conspicuoussnap;337.5→0003.64px shift notconspicuous",
+  "repair_rows": [
+    "preview/contact-sheet.png",
+    "preview/look-directions.png",
+    "directionGIF/spritesheet source ifintended torepresent correctedcostume"
+  ],
+  "repair_notes": "Regenerate direction assets/contact from correctedskirt source",
+  "record_kind": "original worker verdict summary; failure claim preserved before path investigation"
+}

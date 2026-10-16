@@ -1,0 +1,91 @@
+{
+  "ok": true,
+  "reviewed_by": "independent /root/wand_gaze_precheck",
+  "directions": [
+    {
+      "degree": "180",
+      "expected": "down",
+      "observed": "down",
+      "verdict": "pass",
+      "horizontal_evidence": "Centered; no side turn.",
+      "vertical_evidence": "Strong downward gaze.",
+      "reason": "Centered; no side turn. Strong downward gaze."
+    },
+    {
+      "degree": "202.5",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Leftward turn is visible.",
+      "vertical_evidence": "Gaze remains lowered.",
+      "reason": "Leftward turn is visible. Gaze remains lowered."
+    },
+    {
+      "degree": "225",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Clear leftward turn.",
+      "vertical_evidence": "Gaze is lowered.",
+      "reason": "Clear leftward turn. Gaze is lowered."
+    },
+    {
+      "degree": "247.5",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Leftward turn is visible.",
+      "vertical_evidence": "Gaze remains down.",
+      "reason": "Leftward turn is visible. Gaze remains down."
+    },
+    {
+      "degree": "270",
+      "expected": "left",
+      "observed": "left",
+      "verdict": "pass",
+      "horizontal_evidence": "Clear left-facing profile.",
+      "vertical_evidence": "No meaningful up/down tilt.",
+      "reason": "Clear left-facing profile. No meaningful up/down tilt."
+    },
+    {
+      "degree": "292.5",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Leftward turn is visible.",
+      "vertical_evidence": "Gaze is raised.",
+      "reason": "Leftward turn is visible. Gaze is raised."
+    },
+    {
+      "degree": "315",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Clear leftward turn.",
+      "vertical_evidence": "Gaze remains upward.",
+      "reason": "Clear leftward turn. Gaze remains upward."
+    },
+    {
+      "degree": "337.5",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "horizontal_evidence": "Slight leftward turn.",
+      "vertical_evidence": "Gaze remains raised.",
+      "reason": "Slight leftward turn. Gaze remains raised."
+    }
+  ],
+  "continuity_review": [
+    {
+      "boundary": "157.5->180",
+      "severity": "minor",
+      "finding": "A small size/position change is visible, but it does not read as a conspicuous whole-body pop. Feet stay at about the same baseline; waist and head remain close in size and placement. The JSON area ratio is 1.17 and center delta is 5.7 px, which support a watch item but do not match a major visual snap."
+    },
+    {
+      "boundary": "337.5->000",
+      "severity": "minor",
+      "finding": "The return to 000 looks slightly larger and shifts a few pixels, but the feet baseline, waist scale, and head size remain broadly consistent. The area ratio is 1.23 and center delta is 5.83 px; visually this is noticeable without becoming a conspicuous whole-body pop."
+    }
+  ],
+  "accepted_warning": "Small visible boundarysizechanges, not conspicuous bodypop per independentreview; preserve fixedrow9transform."
+}

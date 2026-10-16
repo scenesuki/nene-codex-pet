@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "installed_directory": "C:\\Users\\tieha\\.codex\\pets\\nene_edo",
+  "installed_at": "2026-10-15T09:47:03.486Z",
+  "source_files_match": true,
+  "manifest_sha256": "49fedb45a14b2a50fd4af1558834eeb1b64cc1079024cf0548a67418f89fcdb5",
+  "installed_files": [
+    "pet.json",
+    "spritesheet.webp"
+  ],
+  "id": "custom:nene_edo",
+  "display_name": "nene_edo",
+  "sprite_version": 2,
+  "decoded_dimensions": {
+    "width": 1536,
+    "height": 2288
+  },
+  "format": "webp",
+  "spritesheet_sha256": "4bede31726138a2ed8be69a9acae650401748c5a05531505bc86513d5beeccdc",
+  "app_validator_source": "C:/Program Files/WindowsApps/OpenAI.Codex_26.1007.9446.0_x64__2p2nqsd0c76g0/app/resources/app.asar::.vite/build/src-DCNiwad_.js",
+  "app_validator_module_sha256": "86fb2066bbc2f7428864b76b46ef570b09eb1e92e81e9d6f089f5b048a66df25",
+  "method": "installed files: byte-for-byte comparison with workspace and read-only replay of actual app image/version and path validators; app UI not tested",
+  "application_ui_detection_verified": false,
+  "floating_display_verified": false,
+  "current_pet_changed": false
+}

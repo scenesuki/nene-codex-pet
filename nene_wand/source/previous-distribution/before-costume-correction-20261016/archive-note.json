@@ -1,0 +1,10 @@
+{
+  "status": "superseded-wrong-costume",
+  "reason": "Originalcroppedreference led totrousers; userrequiresabove-kneeskirtandcalfsocks. Nativeformatvalidationonly, oldvisualapprovalinvalidforcostume.",
+  "import_sha256": {
+    "pet.json": "ccfcd0623643a8492f067ea9a6993e916ef99f29aed16f3c6d422bab4183e07d",
+    "spritesheet.webp": "8417595dc4857a429903ac02312c337f58e75c1c532063807f2c63d5a1445e60"
+  },
+  "local_package_preserved": "release-assets/v1.6.0/nene_codex_pets-v1.6.0.zip",
+  "package_sha256": "c11dc714d919b75595d49468b8ffc6705071590b069f6e0a94df53634be5edf5"
+}

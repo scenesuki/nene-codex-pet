@@ -1,0 +1,18 @@
+{
+  "upstream": "C:\\Users\\tieha\\.codex\\skills\\hatch-pet\\scripts\\despill_chroma_edges.py",
+  "upstream_sha256": "dffe62a25a793273df1f548e58e53d4d85d574f5f49e47d0c1e3f9856f4e5bb7",
+  "local_copy": "nene_wand\\source\\qa\\despill-validator-compatible.py",
+  "local_sha256": "9bcc8f680c1dba7afead233ff7c7be9efa442ffe9bccb264008af2d58057d19c",
+  "change": "Union existing alpha/chroma-similarity selection with fixed native-validator RGBdistance<=96; no threshold relaxed, no alpha/geometry modification. Same native edge-local linear-light propagation.",
+  "regression_before": "test-despill-selection.py against upstream: AssertionError opaque validator-positive pixel notselected.",
+  "original_input": "final/spritesheet-extended-preclean.png",
+  "failed_cleanup_preserved": "qa/chroma-despill-extended.json",
+  "failed_validation_preserved": "final/validation-extended.json",
+  "policy": "Failed packaging pipeline stopped; repair implementation in this pet only. New output is ONE pass from untouched preclean input, never reprocess failed cleaned output; no image regeneration or extra cleanup pass.",
+  "regression_after": "PASS: actualopaque sample and neighbor clear; alpha and interiorunchanged.",
+  "corrected_full_atlas_validation": "final/validation-extended-fixed.json",
+  "alpha_preserved_verified": true,
+  "changed_pixels_vs_failed_output": 9,
+  "original_preclean_sha256": "8f0dc1aeac3446ae7a78b91327afef9460bc0c87a78735538ef3e732dfad7b69",
+  "validator_unchanged": true
+}

@@ -1,0 +1,101 @@
+{
+  "pet_id": "nene_wand",
+  "display_name": "nene_wand",
+  "card_title": "ワンダーステッキ",
+  "started_at": "2026-10-15T13:12:54.677831+00:00",
+  "style": "Q版日系插画",
+  "delivery": "完整本地Codex宠物、九种动画、十六方向及预览；不自动安装、上传或发布",
+  "steps": [
+    {
+      "name": "核实卡面与规格",
+      "status": "complete"
+    },
+    {
+      "name": "制作角色基准图",
+      "status": "complete"
+    },
+    {
+      "name": "制作九状态与十六方向",
+      "status": "complete"
+    },
+    {
+      "name": "验证并交付本地成品",
+      "status": "complete"
+    }
+  ],
+  "card_verified": {
+    "id": 123,
+    "rarity": "rarity_2",
+    "assetbundle": "res015_no005",
+    "official_announcement": "https://prtimes.jp/main/html/rd/p/000003548.000005397.html"
+  },
+  "pending_questions": [],
+  "native_contract_verified": true,
+  "approved_completion": "黑色圆头低跟礼鞋＋黑色细杖身，保留金色卷纹杖头",
+  "generation_started_at": "2026-10-15T13:42:14.980623+00:00",
+  "time_budget_minutes": {
+    "preparation": 2,
+    "base": 3,
+    "standard": 10,
+    "looks": 8,
+    "final": 5,
+    "buffer": 2
+  },
+  "base_approved_at": "2026-10-15T13:45:58.286474+00:00",
+  "checkpoints": [
+    {
+      "stage": "standard rows",
+      "status": "4 states componentvalidated;3source-spacing repairs underway; left/review pending.",
+      "strategy": "Layout-first generation with explicitsmallerfigures toprevent hair/coattail bridges; noextractorthresholdchange."
+    },
+    {
+      "at": "2026-10-15T14:03:10.862089+00:00",
+      "stage": "standard rows",
+      "status": "8states componentvalidated. Reviewwhole-row repair underway forvisualmarks/state distinction. Left gaitgeneratedseparately, no mirroredcane.",
+      "spacing_repair_result": "Newidle/right/failed allnativechecks passed. Internalnumeric sourceheighttargets notexact, butactualseparation/unclippedframes meetproductcontract."
+    },
+    {
+      "at": "2026-10-15T14:24:05.599112+00:00",
+      "stage": "look-row-9",
+      "status": "Pass native registration, all8 used-pixel checks, edge diagnostics, parent semantic and continuity. 067.5/157.5 near-axis cues restrained, warnings only.",
+      "source_geometry": "383-393px heights; shared scale0.5038167938931297; adjacentcenter1.12-4.53px/area1.007-1.043"
+    },
+    {
+      "at": "2026-10-15T14:29:01.981899+00:00",
+      "stage": "look-row-10",
+      "status": "Firstsource passed fixedscale geometry but failed LEFT quadrant at270/292.5/315; complete-row repair pending.",
+      "strategy": "High-resolution left anchor FIRST rather than192px anchor; concise landmark directions, row9 scale-only role. No finalcell patch, row9 remains approved."
+    },
+    {
+      "at": "2026-10-15T14:38:35.232712+00:00",
+      "stage": "look-row-10 targeted repair",
+      "status": "r3 reducedsourceheight455-466 to412-422, stillhardclipping. LEFTstrengthenedcardinalapproved; existingrow9immutable.",
+      "strategy_change": "Stop iterative numeric shrink; preserveoriginalr1bodygeometrythatpassedfixedscale, regenerateall8headsfromstrongLEFTcardinal.",
+      "remaining": "Onecoherentleftrow gate then singlecleanup,3blindreviews, independentfinalQA, native loader/export/all7localpackage."
+    }
+  ],
+  "standard_rows_verified_at": "2026-10-15T14:07:42.751565+00:00",
+  "next_gate": null,
+  "elapsed_generation_minutes": 78.83,
+  "convergence": "All nine standard rows and first gaze half passed. Only second gaze half targeted repair before bounded finalQA/export/package.",
+  "deterministic_v2_validation": "final/validation-extended-fixed.json",
+  "single_pass_corrected_implementation": "qa/despill-implementation-fix.json",
+  "blind_review": {
+    "count": 3,
+    "combined_ok": true,
+    "cardinal_gates": "pass",
+    "intermediate_warnings": "retained for labeled review"
+  },
+  "completed_at": "2026-10-15T15:01:04.982401+00:00",
+  "completed_at_jst": "2026-10-16T00:01:04.982401+09:00",
+  "elapsed_total_minutes_including_choice_wait": 108.17,
+  "local_release": "v1.6.0",
+  "installed": false,
+  "uploaded": false,
+  "current_status": "historical-run-superseded-by-corrected-costume",
+  "costume_recheck": "qa/costume-recheck.json",
+  "correction_run": "costume-correction-20261016",
+  "previous_completed_status": "Historicalformatandanimationdelivery; costumeapprovalinvalidated2026-10-16bycomplete-reference review.",
+  "current_effective_run": "costume-correction-20261016",
+  "current_local_release": "v1.6.1"
+}

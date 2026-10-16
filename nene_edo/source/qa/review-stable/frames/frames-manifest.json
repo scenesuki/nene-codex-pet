@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "review",
+      "frames": [
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\00.png",
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\01.png",
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\02.png",
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\03.png",
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\04.png",
+        "D:\\\u9879\u76ee\\pet_2\\nene_edo\\source\\qa\\review-stable\\frames\\review\\05.png"
+      ],
+      "method": "stable-slots"
+    }
+  ]
+}

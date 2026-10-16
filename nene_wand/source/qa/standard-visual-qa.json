@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "reviewer": "/root/wand_standard_qa",
+  "method": "Orderedcontactframes; noGIFplaybackclaim.",
+  "states": [
+    {
+      "state": "idle",
+      "verdict": "pass",
+      "reason": "Quiet blink, stable fullfigure/cane."
+    },
+    {
+      "state": "running-right",
+      "verdict": "pass",
+      "reason": "SCREENRIGHT gait with cyclinglegs."
+    },
+    {
+      "state": "running-left",
+      "verdict": "pass",
+      "reason": "SCREENLEFT opposite gait, correctidentity."
+    },
+    {
+      "state": "waving",
+      "verdict": "pass",
+      "reason": "RaisedfreeRIGHT hand readable butsubtle."
+    },
+    {
+      "state": "jumping",
+      "verdict": "pass",
+      "reason": "Crouch/lift/apex/descent/settle verticalarc, stablecostume/cane."
+    },
+    {
+      "state": "failed",
+      "verdict": "pass",
+      "reason": "Loweredhead/closedeyes recovering to upright/openeyes."
+    },
+    {
+      "state": "waiting",
+      "verdict": "pass",
+      "reason": "FreeRIGHTopenpalm askinggesture andblink."
+    },
+    {
+      "state": "running",
+      "verdict": "pass",
+      "reason": "Plantedchin-thinking, notliteralfootrun."
+    },
+    {
+      "state": "review",
+      "verdict": "pass",
+      "reason": "Waist-levelhands, focusedeyes and restrainedheadnod."
+    }
+  ],
+  "minor_notes": [
+    "Wavinghand and reviewnod restrained atcompactsheetscale."
+  ],
+  "structural": "No severeclipping, apparentinteriorholes, brokenidentity orlostcane; precleanfringe ignored untilfinaldespill."
+}
